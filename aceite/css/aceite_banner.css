@@ -1,0 +1,282 @@
+/* Default ---- < 400px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('../../tipoLetra/Gliker-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#pestannas {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#pestannas ol {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	gap: 6px;
+}
+
+#pestannas li {
+	flex: 1 1 auto;
+	width: 100%;
+}
+
+#pestannas li a {
+	display: block;
+    width: 100%;
+    padding: 10px;
+	font-size: 15px;
+	color: white;
+    background-color: #c3981d;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#pestannas li a:hover {
+    background-color: #e2ba49;
+    color: white;
+}
+
+#pestannas .ui-tabs-active a {
+    background-color: #edc454;
+    font-weight: bold;
+    border: 2px solid #c3981d;
+}
+
+#pestannas .ui-state-active {
+    border: none;
+    box-shadow: none;
+}
+
+#pestannas .ui-tabs-panel {
+    border: none;
+    padding: 0;
+}
+
+#pestannas .ui-widget-header {
+    border: none;
+    background-color: #fef0c2;
+}
+
+#bannerAceite {
+    background-image: url(../../img/fondo_aceite.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 380px;
+    position: relative;
+}
+
+#tituloAceite {
+    font-family: 'Gliker';
+    color: #c3981d;
+    position: absolute;
+	font-size: 65px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-61%);
+	z-index: 2;
+} 
+
+#introAceite {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    font-size: 14px;
+    color: #545454;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+	z-index: 2;
+    background-color: white;
+    border: 2px solid #c3981d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#aceiteBannerImg {
+    position: absolute;
+    top: 13px;
+    left: 70%;
+    height: 76px;
+	z-index: 1;
+}
+
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+	#pestannas li a {
+		font-size: 16px;
+	}
+
+    #tituloAceite {
+        font-size: 85px;
+        top: 12px;
+    }
+
+    #introAceite {
+        font-size: 16px;
+        top: 130px;
+    }
+
+    #aceiteBannerImg {
+        top: 17px;
+        left: 67%;
+        height: 110px;
+    }
+}
+
+/* ===================== MEDIA QUERY  500px - 800px  ================================= */
+@media (min-width: 501px) {
+	#pestannas li a {
+		font-size: 17px;
+	}
+
+    #tituloAceite {
+        font-size: 105px;
+        top: 4px;
+    }
+
+    #introAceite {
+        font-size: 16.5px;
+        top: 145px;
+        width: 50%;
+    }
+
+    #aceiteBannerImg {
+        top: 17px;
+        left: 67%;
+        height: 120px;
+    }
+    
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+	#pestannas li a {
+		font-size: 18px;
+	}
+	
+	#pestannas ol {
+    	flex-direction: row;
+	}
+
+	#pestannas li {
+		width: auto;
+	}
+
+    #aceiteBannerImg {
+        top: 40px;
+        left: 64%;
+        height: 250px;
+    }
+
+    #tituloAceite {
+        font-size: 100px;
+        top: 47px;
+        left: 37%;
+    }
+
+    #introAceite {
+        top: 170px;
+        left: 33%;
+        width: 40%;
+        font-size: 18px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
+@media (min-width: 1001px) {
+	#pestannas li a {
+		font-size: 19px;
+	}
+
+    #aceiteBannerImg {
+        top: 30px;
+        left: 64%;
+        height: 280px;
+    }
+
+    #tituloAceite {
+        font-size: 120px;
+        top: 47px;
+        left: 33%;
+    }
+
+    #introAceite {
+        top: 190px;
+        left: 30%;
+        font-size: 18px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
+@media (min-width: 1201px) {
+	#aceiteBannerImg {
+        top: 26px;
+        left: 65%;
+        height: 310px;
+    }
+
+    #tituloAceite {
+        font-size: 130px;
+        top: 50px;
+        left: 33%;
+    }
+
+    #introAceite {
+        top: 205px;
+        left: 30%;
+        width: 35%;
+        font-size: 19px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+	#pestannas li a {
+		font-size: 20px;
+	}
+
+    #aceiteBannerImg {
+        top: 20px;
+        left: 65%;
+        height: 330px;
+    }
+    #tituloAceite {
+        font-size: 140px;
+        top: 50px;
+        left: 33%;
+    }
+
+    #introAceite {
+        top: 225px;
+        left: 30%;
+        width: 40%;
+        font-size: 20px;        
+    }
+}

@@ -1,0 +1,285 @@
+/* Default ---- < 400px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #e0d1cb 0%, #e0d1cb 50%,#FFFFFF 70%, #FFFFFF 100%);
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('../../tipoLetra/Gliker-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#pestannas {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+#pestannas ol {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	gap: 6px;
+}
+
+#pestannas li {
+	flex: 1 1 auto;
+	width: 100%;
+}
+
+#pestannas li a {
+	display: block;
+    width: 100%;
+    padding: 10px;
+	font-size: 15px;
+	color: white;
+    background-color: #6e8192;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#pestannas li a:hover {
+    background-color: #8fa7bd;
+    color: white;
+}
+
+#pestannas .ui-tabs-active a {
+    background-color: #9ab5ce;
+    font-weight: bold;
+    border: 2px solid #6e8192;
+}
+
+#pestannas .ui-state-active {
+    border: none;
+    box-shadow: none;
+}
+
+#pestannas .ui-tabs-panel {
+    border: none;
+    padding: 0;
+}
+
+#pestannas .ui-widget-header {
+    border: none;
+    background-color: #e0d1cb;
+}
+
+#bannerPescado {
+    background-color: #e0d1cb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 380px;
+    position: relative;
+}
+
+#tituloPescado {
+    font-family: 'Gliker';
+    color: #6e8192;
+    position: absolute;
+	font-size: 45px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-59%);
+	z-index: 2;
+} 
+
+#introPescado {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    font-size: 11px;
+    color: #545454;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+	z-index: 2;
+    background-color: white;
+    border: 2px solid #fb8943;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#pescadoBannerImg {
+    position: absolute;
+    top: 23px;
+    left: 65%;
+    height: 48px;
+    transform: rotate(13deg);
+	z-index: 1;
+}
+
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+	#pestannas li a {
+		font-size: 16px;
+	}
+
+    #tituloPescado {
+        font-size: 75px;
+        top: 20px;
+    }
+
+    #introPescado {
+        font-size: 12px;
+        top: 138px;
+    }
+
+    #pescadoBannerImg {
+        top: 25px;
+        left: 63%;
+        height: 82px;
+    }
+}
+
+/* ===================== MEDIA QUERY  500px - 800px  ================================= */
+@media (min-width: 501px) {
+	#pestannas li a {
+		font-size: 17px;
+	}
+
+    #tituloPescado {
+        font-size: 95px;
+        top: 15px;
+        transform: translateX(-62%);
+    }
+
+    #introPescado {
+        font-size: 14px;
+        top: 156px;
+        width: 50%;
+    }
+
+    #pescadoBannerImg {
+        top: 22px;
+        left: 63%;
+        height: 95px;
+    }
+    
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+	#pestannas li a {
+		font-size: 18px;
+	}
+	
+	#pestannas ol {
+    	flex-direction: row;
+	}
+
+	#pestannas li {
+		width: auto;
+	}
+
+    #pescadoBannerImg {
+        top: 70px;
+        left: 54%;
+        height: 177px;
+        transform: rotate(0deg);
+    }
+
+    #tituloPescado {
+        font-size: 100px;
+        top: 47px;
+        left: 32%;
+        transform: translateX(-59%);
+    }
+
+    #introPescado {
+        top: 170px;
+        left: 28%;
+        width: 50%;
+        font-size: 15px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
+@media (min-width: 1001px) {
+	#pestannas li a {
+		font-size: 19px;
+	}
+
+    #pescadoBannerImg {
+        top: 65px;
+        left: 54%;
+        height: 210px;
+    }
+
+    #tituloPescado {
+        font-size: 120px;
+        top: 47px;
+        left: 33%;
+    }
+
+    #introPescado {
+        top: 190px;
+        left: 28%;
+        font-size: 15px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
+@media (min-width: 1201px) {
+    #pescadoBannerImg {
+        top: 45px;
+        left: 55%;
+        height: 250px;
+    }
+
+    #tituloPescado {
+        font-size: 130px;
+        top: 50px;
+        left: 33%;
+    }
+
+    #introPescado {
+        top: 205px;
+        left: 30%;
+        width: 50%;
+        font-size: 15px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+	#pestannas li a {
+		font-size: 20px;
+	}
+
+    #pescadoBannerImg {
+        top: 50px;
+        left: 55%;
+        height: 270px;
+    }
+    #tituloPescado {
+        font-size: 140px;
+        top: 50px;
+        left: 33%;
+    }
+
+    #introPescado {
+        top: 225px;
+        left: 30%;
+        width: 40%;
+        font-size: 17px;        
+    }
+}

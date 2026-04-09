@@ -1,0 +1,288 @@
+/* Default ---- < 400px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #FBCBA3 0%, #FBCBA3 50%,#FFFFFF 70%, #FFFFFF 100%);
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('../../tipoLetra/Gliker-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#pestannas {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+#pestannas ol {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	gap: 6px;
+}
+
+#pestannas #pestannasMenu li {
+	flex: 1 1 auto;
+	width: 100%;
+    border: 2px solid #d26c00;
+}
+
+#pestannas #pestannasMenu li a {
+	display: block;
+    width: 100%;
+    padding: 10px;
+	font-size: 15px;
+	color: white;
+    background-color: #e78224;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#pestannas #pestannasMenu li a:hover {
+    background-color: #eaa565;
+    color: white;
+}
+
+#pestannas #pestannasMenu .ui-tabs-active a {
+    background-color: #eaa565;
+    font-weight: bold;
+    border: 2px solid #d26c00;
+}
+
+#pestannas  #pestannasMenu .ui-state-active {
+    border: none;
+    box-shadow: none;
+}
+
+#pestannas  #pestannasMenu .ui-tabs-panel {
+    border: none;
+    padding: 0;
+}
+
+#pestannas .ui-widget-header {
+    border: none;
+    background-color: #fbcba3;
+}
+
+#bannerHuevo {
+    background-color: #fbcba3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: 380px;
+    position: relative;
+}
+
+#tituloHuevo {
+    font-family: 'Gliker';
+    color: #e78224;
+    position: absolute;
+	font-size: 65px;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-61%);
+	z-index: 2;
+} 
+
+#introHuevo {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    font-size: 14px;
+    color: #545454;
+    line-height: 1.4;
+    font-weight: 500;
+    text-align: center;
+	z-index: 2;
+    background-color: white;
+    border: 2px solid #e78224;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#huevoBannerImg {
+    position: absolute;
+    top: 25px;
+    left: 67%;
+    height: 76px;
+	z-index: 1;
+}
+
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+	#pestannas #pestannasMenu li a {
+		font-size: 16px;
+	}
+
+    #tituloHuevo {
+        font-size: 90px;
+        top: 13px;
+    }
+
+    #introHuevo {
+        font-size: 17px;
+        top: 130px;
+    }
+
+    #huevoBannerImg {
+        top: 17px;
+        left: 66%;
+        height: 110px;
+    }
+}
+
+/* ===================== MEDIA QUERY  500px - 800px  ================================= */
+@media (min-width: 501px) {
+	#pestannas #pestannasMenu li a {
+		font-size: 17px;
+	}
+
+    #tituloHuevo {
+        font-size: 115px;
+        top: 4px;
+    }
+
+    #introHuevo {
+        font-size: 18px;
+        top: 145px;
+        width: 50%;
+    }
+
+    #huevoBannerImg {
+        top: 7px;
+        left: 62%;
+        height: 140px;
+    }
+    
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+    body{
+        background: white;
+    }
+	#pestannas #pestannasMenu li a {
+		font-size: 18px;
+	}
+	
+	#pestannas ol {
+    	flex-direction: row;
+	}
+
+	#pestannas #pestannasMenu li {
+		width: auto;
+	}
+
+    #huevoBannerImg {
+        top: 40px;
+        left: 60%;
+        height: 230px;
+    }
+
+    #tituloHuevo {
+        font-size: 100px;
+        top: 35px;
+        left: 37%;
+    }
+
+    #introHuevo {
+        top: 160px;
+        left: 33%;
+        width: 40%;
+        font-size: 18px;        
+    }
+
+
+}
+
+/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
+@media (min-width: 1001px) {
+	#pestannas #pestannasMenu li a {
+		font-size: 19px;
+	}
+
+    #huevoBannerImg {
+        top: 10px;
+        left: 60%;
+        height: 300px;
+    }
+
+    #tituloHuevo {
+        font-size: 120px;
+        top: 32px;
+        left: 33%;
+    }
+
+    #introHuevo {
+        top: 180px;
+        left: 30%;
+        font-size: 18px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
+@media (min-width: 1201px) {
+	#huevoBannerImg {
+        top: 10px;
+        left: 65%;
+        height: 320px;
+    }
+
+    #tituloHuevo {
+        font-size: 130px;
+        top: 30px;
+        left: 33%;
+    }
+
+    #introHuevo {
+        top: 195px;
+        left: 30%;
+        width: 35%;
+        font-size: 19px;        
+    }
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+	#pestannas #pestannasMenu li a {
+		font-size: 20px;
+	}
+
+    #huevoBannerImg {
+        top: 2px;
+        left: 65%;
+        height: 360px;
+    }
+    #tituloHuevo {
+        font-size: 140px;
+        top: 30px;
+        left: 33%;
+    }
+
+    #introHuevo {
+        top: 205px;
+        left: 30%;
+        width: 40%;
+        font-size: 22px;        
+    }
+}

@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Pescado </title>
+		<meta charset="utf-8" />
+		<meta name="author" content="tu nombre" />
+        <link rel="stylesheet" href="css/pescado_banner.css" type="text/css">
+		<link rel="stylesheet" href="css/pescado_menu.css" type="text/css" />
+		<link rel="stylesheet" href="css/pescado_paramQui.css" type="text/css" />
+		<link rel="stylesheet" href="css/pescado_paramFiSe.css" type="text/css" />
+		<link rel="stylesheet" href="css/pescado_paramMicro.css" type="text/css" />
+        <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
+        <script src="../jquery/jquery-3.7.1.min.js"></script>
+        <script src="../jquery/jquery-ui.min.js"></script>
+        <script src="js/pescado.js" type="text/javascript"> </script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header>
+		
+		</header>
+		<nav class="menuHTML">
+			<label for="menu-toggle">
+				<div class="botonMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</label>
+			<input type="checkbox" id="menu-toggle" />
+			<ol id="menus">
+				<li><a id="home" href="../index.html">🏠︎</a></li>
+				<li><a href="../aceite/aceite.html">aceite</a></li>
+				<li><a href="../carne/carne.html">carne</a></li>
+				<li><a href="../harina/harina.html">harina</a></li>
+				<li><a href="../huevo/huevo.html">huevo</a></li>
+				<li><a href="../leche/leche.html">leche</a></li>
+				<li><a href="../pescado/pescado.html">pescado</a></li>
+			</ol>
+		</nav>
+		<main>
+			<section>
+				<article>
+					<div id="bannerPescado">
+						<h1 id="tituloPescado">Pescado</h1>
+						<div id="introPescado">
+							Calidad: El término "calidad" en el pescado se refiere generalmente a su apariencia
+							estética, frescura y el grado de deterioro sufrido, pero también involucra aspectos de
+							seguridad como la ausencia de bacterias peligrosas, parásitos o compuestos químicos.
+							Los métodos para evaluar la calidad del pescado fresco se dividen en dos categorías:
+							sensorial e instrumental.
+						</div>
+						<img src="../img/pescado_img.png" alt="Conjunto de Carnes" id="pescadoBannerImg">
+					</div>
+				</article>
+				<article>
+					<div id="pestannas">
+                        <ol>
+                            <li><a href="#paramFi">PARÁM. FÍSICOS Y SENSORIALES</a></li>
+                            <li><a href="#paramQui">PARÁMETROS QUÍMICOS</a></li>
+                            <li><a href="#paramBio">PARÁMETROS MICROBIOLÓGICOS</a></li>
+                        </ol>
+                        <div id="paramFi">
+							<div id="contenParamFi">
+								<h2 class="tituloParamFi">PARÁMETROS FÍSICOS Y SENSORIALES</h2>
+							</div>
+							<div id="infoParamsFi">
+								<div id="contenInfoParamFi">
+									<div class="infoParamFi">
+										<div class="infoParamFiTit"><img src="../img/TMA.png" alt="">Aspecto externo</div>
+										<div class="infoParamFiDesc">Piel brillante, escamas adheridas, ojos salientes y claros.</div>
+									</div>
+									<div class="infoParamFi">
+										<div class="infoParamFiTit"><img src="../img/colorPescado.png" alt="">Color de las branquias</div>
+										<div class="infoParamFiDesc">Rojo brillante (indicador de frescura).</div>
+									</div>
+									<div class="infoParamFi">
+										<div class="infoParamFiTit"><img src="../img/mal-olor.png" alt="">Olor</div>
+										<div class="infoParamFiDesc">Características a mar, sin olor a amoniaco ni putrefacción.</div>
+									</div>
+									<div class="infoParamFi">
+										<div class="infoParamFiTit"><img src="../img/texturaPescado.png" alt="">Textura</div>
+										<div class="infoParamFiDesc">Carne firme, elástica al tacto.</div>
+									</div>
+									<div class="infoParamFi">
+										<div class="infoParamFiTit"><img src="../img/paleta-de-color.png" alt="">Color de la carne</div>
+										<div class="infoParamFiDesc"> Depende del tipo de pescado, pero debe ser uniforme.</div>
+									</div>
+								</div>
+								<div id="imgInfoParamFi">
+									<div class="cajaImgParamFi">
+										<h2 class="infoParamFiTit">Pescado Fresco</h2>
+										<img src="../img/pescadoFresco1.jpg" alt="Pescado fresco">
+									</div>
+									<div class="cajaImgParamFi">
+										<h2 class="infoParamFiTit">Pescado con Deficiencia</h2>
+										<img src="../img/pescadoDeficiencia1.jpg" alt="Pescado con deficiencia">
+									</div>
+								</div>
+							</div>
+                        </div>
+                        <div id="paramQui">
+							<div id="contenParamQui">
+								<h2 class="tituloParamQui">PARÁMETROS QUÍMICOS</h2>
+							</div>
+							<div class="simulador">
+								<h2>🧪 Simulador de Deterioro Químico</h2>
+								<h4>Días post-captura:</h4>
+								<label>
+									<input type="range" id="diasRango" min="0" max="10" step="1" value="0">
+									<div id="valoresRango">
+										<span id="diasValorMov">Día 0</span>
+										<span id="diasValorFin">Día 10</span>
+									</div>
+								</label>
+								<table>
+								<thead>
+									<tr>
+									<th>Parámetro</th>
+									<th>Valor</th>
+									<th>Estado</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<td>BVT (mg N/100g)</td>
+									<td id="bvtValor">5</td>
+									<td id="bvtEstado" class="estadoNormal">Normal</td>
+									</tr>
+									<tr>
+									<td>Amoniaco (mg)</td>
+									<td id="amoniacoValor">2</td>
+									<td id="amoniacoEstado" class="estadoNormal">Normal</td>
+									</tr>
+									<tr>
+									<td>TMA (mg)</td>
+									<td id="tmaValor">1</td>
+									<td id="tmaEstado" class="estadoNormal">Normal</td>
+									</tr>
+									<tr>
+									<td>pH</td>
+									<td id="phValor">6.8</td>
+									<td id="phEstado" class="estadoNormal">Normal</td>
+									</tr>
+								</tbody>
+								</table>
+							</div>
+							<div id="contenInfoParamQui">
+								<h2>Información Parámetros Químicos</h2>
+								<div class="cardGrid">
+									<div class="card">
+										<div class="cardIcono"><img src="../img/bvt.png" alt=""></i></div>
+										<div class="cardTitulo">Bases Volátiles Totales (BVT)</div>
+										<div class="cardDesc">La medición de BVT es un método común para evaluar la calidad de los productos pesqueros.</div>
+										<a href="#" class="leerMas" id="bvt">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/amoniaco.png" alt=""></i></div>
+										<div class="cardTitulo">Amoniaco</div>
+										<div class="cardDesc">El amoniaco se produce por la degradación bacteriana o autolítica de proteínas, péptidos y aminoácidos en productos pesqueros.</div>
+										<a href="#" class="leerMas" id="amoniaco">Leer más</a>
+									</div>
+										<div class="card">
+										<div class="cardIcono"><img src="../img/TMA.png" alt=""></i></div>
+										<div class="cardTitulo">Trimetilamina (TMA)</div>
+										<div class="cardDesc">La trimetilamina genera el olor característico a pescado en deterioro. </div>
+										<a href="#" class="leerMas" id="tma">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/ph_pescado.png" alt=""></i></div>
+										<div class="cardTitulo">pH</div>
+										<div class="cardDesc">El pH del pescado fresco suele estar entre 6.0 y 7.0.</div>
+										<a href="#" class="leerMas" id="ph">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/agua.png" alt=""></i></div>
+										<div class="cardTitulo">Composición de agua</div>
+										<div class="cardDesc">El contenido de agua en el pescado es alto, generalmente 70% a 80%.</div>
+										<a href="#" class="leerMas" id="compAgua">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/proteina.png" alt=""></i></div>
+										<div class="cardTitulo">Proteínas</div>
+										<div class="cardDesc">Las proteínas del pescado representan entre 15% y 25% de su peso.</div>
+										<a href="#" class="leerMas" id="proteinas">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/lipido.png" alt=""></i></div>
+										<div class="cardTitulo">Lípidos (Grasas)</div>
+										<div class="cardDesc">El contenido de lípidos varía según la especie, pero suele estar entre 1% y 15%.</div>
+										<a href="#" class="leerMas" id="lipidos">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/aminoacidos.png" alt=""></i></div>
+										<div class="cardTitulo">Aminoácidos</div>
+										<div class="cardDesc">Los pescados son ricos en aminoácidos esenciales.</div>
+										<a href="#" class="leerMas" id="aminoacidos">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/minerales.png" alt=""></i></div>
+										<div class="cardTitulo">Minerales</div>
+										<div class="cardDesc">Los pescados son una buena fuente de minerales.</div>
+										<a href="#" class="leerMas" id="minerales">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/acidosGrasosPescado.png" alt=""></i></div>
+										<div class="cardTitulo">Ácidos grasos</div>
+										<div class="cardDesc">El pescado es una fuente importante de ácidos grasos poliinsaturados</div>
+										<a href="#" class="leerMas" id="acidosGrasos">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/colorPescado.png" alt=""></i></div>
+										<div class="cardTitulo">Color</div>
+										<div class="cardDesc"> El color del pescado puede indicar su frescura.</div>
+										<a href="#" class="leerMas" id="color">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/aw.png" alt=""></i></div>
+										<div class="cardTitulo">Actividad de agua (Aw)</div>
+										<div class="cardDesc">El valor de actividad de agua es un indicador importante de la vida útil del pescado.</div>
+										<a href="#" class="leerMas" id="aw">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/tamanoYFormaPescado.png" alt=""></i></div>
+										<div class="cardTitulo">Tamaño y forma</div>
+										<div class="cardDesc">El tamaño y la forma también son parámetros físico-químicos que afectan la calidad del pescado.</div>
+										<a href="#" class="leerMas" id="tamForma">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/salinidad.png" alt=""></i></div>
+										<div class="cardTitulo">Salinidad</div>
+										<div class="cardDesc">En los pescados de agua salada.</div>
+										<a href="#" class="leerMas" id="salinidad">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/texturaPescado.png" alt=""></i></div>
+										<div class="cardTitulo">Textura</div>
+										<div class="cardDesc">La textura del pescado fresco es firme pero no dura</div>
+										<a href="#" class="leerMas" id="textura">Leer más</a>
+									</div>
+									<div class="card">
+										<div class="cardIcono"><img src="../img/temperaturaPescado.png" alt=""></i></div>
+										<div class="cardTitulo">Temperatura</div>
+										<div class="cardDesc">: La temperatura en la que se mantiene el pescado es esencial para su conservación.</div>
+										<a href="#" class="leerMas" id="temperatura">Leer más</a>
+									</div>
+								</div>
+								<dialog id="dialogParamQui">
+									<img src="../img/cruz_azulGris.png" alt="Icono cruz" id="cerrarBoton">
+									<div class="contenidoDialogo">
+										<h2 id="infoTitulo"></h2>
+										<div id="infoContenido">
+											<p><span id="infoDesc"></span></p>
+										</div>
+									</div>
+								</dialog>
+							</div>
+							<div id="imgInfoParamQui">
+								<div class="cardImgParamQui">
+									<h2 class="infoParamQuiTit">Pescado Fresco</h2>
+									<img src="../img/pescadoFresco2.jpg" alt="Pescado fresco">
+								</div>
+								<div class="cardImgParamQui">
+									<h2 class="infoParamQuiTit">Pescado con Deficiencia</h2>
+									<img src="../img/pescadoDeficiencia2.jpg" alt="Pescado con deficiencia">
+								</div>
+							</div>
+                        </div>
+                        <div id="paramBio">
+							<div id="checklistTituloConten">
+								<h2 id="checklistTitulo">EXAMEN DE CASOS</h2>
+								<p>Lee atentamente cada uno de los siguientes casos simulados sobre el análisis de pescado. Después de leer cada caso, selecciona la opción que consideres correcta según la información presentada:</p>
+							</div>
+							<div id="contenedorPreguntas">
+								<div class="contendorPregunta" id="c1">
+									<h3>CASO 1</h3>
+									<div class="casoFlex">
+										<table class="tablaCasos">
+											<thead>
+												<tr>
+													<th>Parámetro</th>
+													<th>Valor</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Aerobios mesófilos</td>
+													<td>8.0 × 10⁵ UFC/g</td>
+												</tr>
+												<tr>
+													<td>E. coli</td>
+													<td>0 UFC/g</td>
+												</tr>
+												<tr>
+													<td>Salmonella spp.</td>
+													<td>Ausente</td>
+												</tr>
+												<tr>
+													<td>Listeria monocytogenes</td>
+													<td>Ausente</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="opcionesCaso">
+											<label for="" >
+												<input type="radio" name="caso1" class="correcta">
+												<span>Apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso1" class="incorrecta">
+												<span>No apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso1" class="incorrecta">
+												<span>Requiere más análisis</span>
+											</label>
+										</div>
+									</div>
+									<div class="expCaso">
+										<p><b>Explicación:</b> Todos los parámetros están dentro de límites aceptables. El pescado es fresco, con baja carga bacteriana y sin patógenos detectables.</p>
+									</div>
+								</div>
+								<div class="contendorPregunta" id="c2">
+									<h3>CASO 2</h3>
+									<div class="casoFlex">
+										<table class="tablaCasos">
+											<thead>
+												<tr>
+													<th>Parámetro</th>
+													<th>Valor</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Aerobios mesófilos</td>
+													<td>2.4 × 10⁶ UFC/g</td>
+												</tr>
+												<tr>
+													<td>E. coli</td>
+													<td>10 UFC/g</td>
+												</tr>
+												<tr>
+													<td>Salmonella spp.</td>
+													<td>Ausente</td>
+												</tr>
+												<tr>
+													<td>Listeria monocytogenes</td>
+													<td>Detectada</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="opcionesCaso">
+											<label for="" >
+												<input type="radio" name="caso2" class="incorrecta">
+												<span>Apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso2" class="correcta">
+												<span>No apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso2" class="incorrecta">
+												<span>Requiere más análisis</span>
+											</label>
+										</div>
+									</div>
+									<div class="expCaso">
+										<p><b>Explicación:</b> Listeria <b>no puede estar presente</b> en productos listos para consumo. Es un 
+										riesgo crítico, incluso si los demás valores parecen aceptables.</p>
+									</div>
+								</div>
+								<div class="contendorPregunta" id="c3">
+									<h3>CASO 3</h3>
+									<div class="casoFlex">
+										<table class="tablaCasos">
+											<thead>
+												<tr>
+													<th>Parámetro</th>
+													<th>Valor</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Aerobios mesófilos</td>
+													<td>5.0 × 10³ UFC/g</td>
+												</tr>
+												<tr>
+													<td>E. coli</td>
+													<td>0 UFC/g</td>
+												</tr>
+												<tr>
+													<td>Salmonella spp.</td>
+													<td>Presente</td>
+												</tr>
+												<tr>
+													<td>Listeria monocytogenes</td>
+													<td>Ausente</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="opcionesCaso">
+											<label for="" >
+												<input type="radio" name="caso3" class="incorrecta">
+												<span>Apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso3" class="correcta">
+												<span>No apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso3" class="incorrecta">
+												<span>Requiere más análisis</span>
+											</label>
+										</div>
+									</div>
+									<div class="expCaso">
+										<p><b>Explicación:</b> La <b>presencia de Salmonella</b> en cualquier tipo de producto es inaceptable, 
+										congelado o no. </p>
+									</div>
+								</div>
+								<div class="contendorPregunta" id="c4">
+									<h3>CASO 4</h3>
+									<div class="casoFlex">
+										<table class="tablaCasos">
+											<thead>
+												<tr>
+													<th>Parámetro</th>
+													<th>Valor</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Aerobios mesófilos</td>
+													<td>9.2 × 10⁶ UFC/g</td>
+												</tr>
+												<tr>
+													<td>E. coli</td>
+													<td>100 UFC/g</td>
+												</tr>
+												<tr>
+													<td>Salmonella spp.</td>
+													<td>Ausente</td>
+												</tr>
+												<tr>
+													<td>Listeria monocytogenes</td>
+													<td>Ausente</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="opcionesCaso">
+											<label for="" >
+												<input type="radio" name="caso4" class="incorrecta">
+												<span>Apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso4" class="incorrecta">
+												<span>No apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso4" class="correcta">
+												<span>Requiere más análisis</span>
+											</label>
+										</div>
+									</div>
+									<div class="expCaso">
+										<p><b>Explicación:</b> Aunque no está listo para consumo, la alta carga microbiana y presencia de E. 
+										coli sugiere condiciones higiénicas cuestionables. Se recomienda repetir análisis y evaluar 
+										condiciones de almacenamiento.</p>
+									</div>
+								</div>
+								<div class="contendorPregunta" id="c5">
+									<h3>CASO 5</h3>
+									<div class="casoFlex">
+										<table class="tablaCasos">
+											<thead>
+												<tr>
+													<th>Parámetro</th>
+													<th>Valor</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Aerobios mesófilos</td>
+													<td>1.1 × 10⁶ UFC/g </td>
+												</tr>
+												<tr>
+													<td>E. coli</td>
+													<td>25 UFC/g</td>
+												</tr>
+												<tr>
+													<td>Salmonella spp.</td>
+													<td>Ausente</td>
+												</tr>
+												<tr>
+													<td>Listeria monocytogenes</td>
+													<td>No detectada</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="opcionesCaso">
+											<label for="" >
+												<input type="radio" name="caso5" class="incorrecta">
+												<span>Apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso5" class="incorrecta">
+												<span>No apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso5" class="correcta">
+												<span>Requiere más análisis</span>
+											</label>
+										</div>
+									</div>
+									<div class="expCaso">
+										<p><b>Explicación:</b>  El recuento es elevado para un producto cocido. Aunque no hay patógenos, 
+										podría indicar contaminación postcocción. Debería revisarse el proceso.</p>
+									</div>
+								</div>
+								<div class="contendorPregunta" id="c6">
+									<h3>CASO 6</h3>
+									<div class="casoFlex">
+										<table class="tablaCasos">
+											<thead>
+												<tr>
+													<th>Parámetro</th>
+													<th>Valor</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Aerobios mesófilos</td>
+													<td>1.0 × 10⁵ UFC/g</td>
+												</tr>
+												<tr>
+													<td>E. coli</td>
+													<td>5 UFC/g</td>
+												</tr>
+												<tr>
+													<td>Salmonella spp.</td>
+													<td>Ausente</td>
+												</tr>
+												<tr>
+													<td>Listeria monocytogenes</td>
+													<td>Detectada</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="opcionesCaso">
+											<label for="" >
+												<input type="radio" name="caso6" class="incorrecta">
+												<span>Apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso6" class="correcta">
+												<span>No apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso6" class="incorrecta">
+												<span>Requiere más análisis</span>
+											</label>
+										</div>
+									</div>
+									<div class="expCaso">
+										<p><b>Explicación:</b>  Aunque se trate de un alimento con procesamiento, si se comercializa listo 
+										para el consumo, <b>la presencia de Listeria es prohibida.</b> Representa un riesgo severo para 
+										embarazadas, ancianos e inmunodeprimidos. </p>
+									</div>
+								</div>
+								<div class="contendorPregunta" id="c7">
+									<h3>CASO 7</h3>
+									<div class="casoFlex">
+										<table class="tablaCasos">
+											<thead>
+												<tr>
+													<th>Parámetro</th>
+													<th>Valor</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Aerobios mesófilos</td>
+													<td>1.9 × 10⁶ UFC/g</td>
+												</tr>
+												<tr>
+													<td>E. coli</td>
+													<td>10 UFC/g</td>
+												</tr>
+												<tr>
+													<td>Salmonella spp.</td>
+													<td>Ausente</td>
+												</tr>
+												<tr>
+													<td>Listeria monocytogenes</td>
+													<td>Ausente</td>
+												</tr>
+											</tbody>
+										</table>
+										<div class="opcionesCaso">
+											<label for="" >
+												<input type="radio" name="caso7" class="correcta">
+												<span>Apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso7" class="incorrecta">
+												<span>No apto para consumo</span>
+											</label>
+											<label for="" >
+												<input type="radio" name="caso7" class="incorrecta">
+												<span>Requiere más análisis</span>
+											</label>
+										</div>
+									</div>
+									<div class="expCaso">
+										<p><b>Explicación:</b>  Aunque el recuento de aerobios es elevado, está dentro de los límites. No hay 
+										presencia de patógenos y se asume que el producto será cocido, lo cual elimina la mayoría 
+										de los riesgos.</p>
+									</div>
+								</div>
+								<div class="bloqueBotones">
+									<div>
+										<button id="botonCorregir">Corregir respuestas</button>
+										<button id="botonVolverEmp">Volver a empezar</button>
+									</div>
+									<div id="leyenda">
+										<h4>Leyenda de colores:</h4>
+										<div class="leyendaCasilla"><span class="cajaColor correctaAcertada"></span> Correcta marcada</div>
+										<div class="leyendaCasilla"><span class="cajaColor incorrectaMarcada"></span> Incorrecta marcada</div>
+										<div class="leyendaCasilla"><span class="cajaColor correctaNoMarcada"></span> Correcta no marcada</div>
+									</div>
+									<div id="contenedorResultado">
+										<div id="resultado">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+				</article>
+			</section>
+		</main>
+		<footer>
+		</footer>
+		<aside>
+		</aside>
+	</body>
+</html>
