@@ -1,0 +1,25 @@
+:root {
+    --letras: #8b461b;
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('../../tipoLetra/Gliker-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.general ol~div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--letras);
+}
+
+/* Ponerlo en algo más global y poder eliminarlo desde cada css */
+.general h2{
+    font-family: 'Gliker';
+}

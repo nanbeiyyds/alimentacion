@@ -101,13 +101,13 @@ function mostrarInfo(param){
     $('#infoTitulo').text(info[param].title);
     $('#infoDesc').html(info[param].desc);
 
-    $("#dialogCompQui")[0].showModal(); 
+    $("#dialogCuriosidades")[0].showModal(); 
 
     
 }
 
 function cerrarInfo() {
-    $("#dialogCompQui")[0].close(); 
+    $("#dialogCuriosidades")[0].close(); 
 }
 
 function mostrarDietas(dieta) {

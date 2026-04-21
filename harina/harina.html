@@ -4,13 +4,15 @@
 		<title>Harina </title>
 		<meta charset="utf-8" />
 		<meta name="author" content="tu nombre" />
-        <link rel="stylesheet" href="css/harina_banner.css" type="text/css">
 		<link rel="stylesheet" href="css/harina_menu.css" type="text/css" />
-		<link rel="stylesheet" href="css/harina_apliDiet.css" type="text/css"/>
-		<link rel="stylesheet" href="css/harina_queEs.css" type="text/css"/>
-		<link rel="stylesheet" href="css/harina_compQui.css" type="text/css"/>
-		<link rel="stylesheet" href="css/harina_paramQui.css" type="text/css"/>
-		<link rel="stylesheet" href="css/harina_paramFi.css" type="text/css"/>
+		<link rel="stylesheet" href="css/harina_banner.css" type="text/css" >
+		<link rel="stylesheet" href="css/harina_general.css" type="text/css" >
+		<link rel="stylesheet" href="css/harina_valorNutri.css" type="text/css" >
+		<link rel="stylesheet" href="css/harina_ingestaRecomendada.css" type="text/css" >
+		<link rel="stylesheet" href="css/harina_racioMedi.css" type="text/css" >
+		<link rel="stylesheet" href="css/harina_patoFisio.css" type="text/css" >
+		<link rel="stylesheet" href="css/harina_metodoAnalisis.css" type="text/css" >
+		<link rel="stylesheet" href="css/harina_curiosidades.css" type="text/css" >
         <link rel="stylesheet" href="../jquery/jquery-ui.min.css">
         <script src="../jquery/jquery-3.7.1.min.js"></script>
         <script src="../jquery/jquery-ui.min.js"></script>
@@ -46,627 +48,57 @@
 					<div id="bannerHarina">
 						<h1 id="tituloHarina">Harina</h1>
 						<div id="introHarina">
-							La harina es un polvo obtenido principalmente de la molienda de cereales, siendo el trigo el más común.
+							Introducción
 						</div>
 						<img src="../img/harina_img.png" alt="Conjunto de Carnes" id="harinaBannerImg">
 					</div>
 				</article>
-				<article>
+				<article class="contenido general">
 					<div id="pestannas">
                         <ol>
-							<li><a href="#queEs">¿QUÉ ES?</a></li>
-                            <li><a href="#compQui">COMPOSICIÓN QUÍMICA</a></li>
-                            <li><a href="#paramFi">PARÁMETROS FÍSICOS</a></li>
-                            <li><a href="#paramQui">PARÁMETROS QUÍMICOS</a></li>
-                            <li><a href="#apliDiet">APLICACIONES DIETÉTICAS</a></li>
+                            <li><a href="#valorNutri">VALOR NUTRICIONAL</a></li>
+                            <li><a href="#ingestaRecomendada">INGESTA RECOMENDADAS Y OBJETIVOS NUTRICIONALES</a></li>
+                            <li><a href="#racioMedi">RACIONES Y MEDIDAS CASERAS</a></li>
+                            <li><a href="#patoFisio">PATOLOGÍAS Y FISIOLOGÍAS</a></li>
+							<li><a href="#metodoAnalisis">MÉTODOS DE ANÁLISIS</a></li>
+							<li><a href="#curiosidades">CURIOSIDADES</a></li>
                         </ol>
-                        <div id="queEs">
-							<div id="contenTitQueEs">
-								<img src="../img/preguntaMarron2.png" alt="Icono signo de interrogación" id="inter1">
-								<h2 class="tituloQueEs">QUÉ ES</h2>
-								<img src="../img/preguntaMarron1.png" alt="Icono signo de interrogación" id="inter2">
-							</div>
-							<div id="conteInfoQueEs">
-								<div id="parrafoQueEs1">
-									<div>
-										¿Qué es la harina? Es un polvo fino obtenido principalmente de la molienda de cereales como el trigo, aunque también se pueden utilizar otros granos como el maíz, centeno, avena, arroz o incluso legumbres y frutos secos. 
-										Se trata de un ingrediente esencial en la alimentación humana, ya que constituye una de las principales fuentes de energía debido a su alto contenido en carbohidratos. Además, aporta proteínas, fibras y vitaminas y minerales, esenciales para el organismo. 
-									</div>
-									<img src="../img/harinaQue.jpg" alt="Harina">
-								</div>
-								<div id="parrafoQueEs2">
-									<div>
-										La harina no solo se usa en la preparación de productos básicos como panes y pasteles, sino que ha evolucionado a lo largo del tiempo para adaptarse a diversas necesidades alimenticias. Por eso, existen harinas integrales, que conservan los nutrientes del grano entero, y harinas más refinadas, que son principalmente almidón. Este proceso de molienda y refinado influye en sus características y propiedades, lo que hace que las harinas se adapten a distintos usos culinarios y dietéticos. 
-									</div>
-								</div>
-								<div id="parrafoQueEs3">
-									<img src="../img/harinaQueEs2.jpg" alt="Harina">
-									<div>
-										Además, hoy en día, las harinas tienen aplicaciones mucho más amplias. No solo se utilizan en la cocina tradicional, sino también en la industria alimentaria, adaptándose a tendencias como la alimentación sin gluten, la elaboración de productos más saludables y en la creación de harinas especializadas para necesidades dietéticas específicas. 
-									</div>
-								</div>
-							</div>
-                        </div>
-                        <div id="compQui">
-							<div id="contenTitCompQui">
-								<h2 class="tituloCompQui">COMPOSICIÓN QUÍMICA</h2>
-							</div>
-							<div id="contenCompQui">
-								<div id="parrafoCompQui1">
-									<img src="../img/compQuiHarina1.jpg" alt="">
-									<div id="infoMacro">
-										<div id="contenTitMacro">
-											<h2 class="tituloMacro">Macronutrientes</h2>
-										</div>
-										<div id="infoInvMacro">
-											<div class="contenMacro">
-												<div class="TitsMacro">
-													<h3>Hidratos de carbono</h3>
-												</div>
-												Son el componente principal de las harinas, representando entre un 60% y un 80% de su composición.
-												<br><a href="#" class="leerMas" id="hidratosCarbono">Leer más</a>
-											</div>
-											<div class="contenMacro">
-												<div class="TitsMacro">
-													<h3>Proteínas</h3>
-												</div>
-												Las proteínas constituyen entre el 5% y el 20% del contenido de la harina, según la fuente de origen.
-												<br><a href="#" class="leerMas" id="proteinas">Leer más</a>
-											</div>
-											<div class="contenMacro">
-												<div class="TitsMacro">
-													<h3>Lípidos (grasas)</h3>
-												</div>
-												Aunque en menor cantidad (entre un 1% y un 5%), los lípidos son relevantes porque:
-												Aportan sabor y contribuyen a la textura (untuosidad y ternura)
-												<br><a href="#" class="leerMas" id="lipidos">Leer más</a>
-											</div>
-											<div class="contenMacro">
-												<div class="TitsMacro">
-													<h3>Fibra</h3>
-												</div>
-												La cantidad de fibra varía mucho según el tipo de harina
-												<br><a href="#" class="leerMas" id="fibra">Leer más</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="parrafoCompQui2">
-									<div id="infoMicro">
-										<div id="contenTitMicro">
-											<h2 class="tituloMicro">Micronutrientes</h2>
-										</div>
-										<div id="infoInvMicro">
-											<div class="contenMicro">
-												<div class="TitsMicro">
-													<h3>Minerales (cenizas)</h3>
-												</div>
-												Representan entre el 0,5% y el 2% del peso de la harina
-												<br><a href="#" class="leerMas" id="minerales">Leer más</a>
-											</div>
-											<div class="contenMicro">
-												<div class="TitsMicro">
-													<h3>Vitaminas</h3>
-												</div>
-												Principalmente encontramos vitaminas del grupo B (como tiamina, riboflavina, niacina y folato) y vitamina E (presente en el germen del grano).
-												<br><a href="#" class="leerMas" id="vitaminas">Leer más</a>
-											</div>
-										</div>
-									</div>
-									<img src="../img/compQuiHarina2.jpg" alt="">
-								</div>
-								<div id="parrafoCompQui3">
-									<div id="infoCompQui3">
-										<div id="contenTitCompQui3">
-											<h2 class="tituloCompQui3">Agua</h2>
-										</div>
-										La harina contiene entre un 10% y un 15% de agua. <br>
-										Esta humedad natural es esencial para la hidratación de los componentes de la harina,
-										permitiendo la formación de masas. <br>
-										Además, la cantidad de agua influye en la conservación de la harina: un exceso puede
-										favorecer la aparición de moho o bacterias.	<br>
-									</div>
-								</div>
-								<div id="parrafoCompQui4">
-									<img src="../img/compQuiHarina3.jpg" alt="">
-									<div id="infoOtros">
-										<div id="contenTitOtros">
-											<h2 class="tituloOtros">Otros componentes</h2>
-										</div>
-										<div id="infoInvOtro">
-											<div class="contenOtro">
-												<div class="TitsOtro">
-													<h3>Enzimas</h3>
-												</div>
-												Existen enzimas naturales como: Amilasas y Proteasas.
-												<br><a href="#" class="leerMas" id="enzimas">Leer más</a>
-											</div>
-											<div class="contenOtro">
-												<div class="TitsOtro">
-													<h3>Compuestos fenólicos y antioxidantes</h3>
-												</div>
-												Especialmente en harinas integrales, encontramos antioxidantes naturales que ayudan a proteger las células del daño oxidativo
-												<br><a href="#" class="leerMas" id="fenoAnti">Leer más</a>
-											</div>
-											<div class="contenOtro">
-												<div class="TitsOtro">
-													<h3>Pigmentos naturales</h3>
-												</div>
-												Algunas harinas contienen pigmentos como los <strong>carotenoides</strong> (por ejemplo, luteína), que dan un color amarillo suave a la harina de trigo duro.
-												<br><a href="#" class="leerMas" id="pigNat">Leer más</a>
-											</div>
-											<div class="contenOtro">
-												<div class="TitsOtro">
-													<h3>Antinutrientes</h3>
-												</div>
-												Se encuentran principalmente en harinas integrales
-												<br><a href="#" class="leerMas" id="antiNutri">Leer más</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<dialog id="dialogCompQui">
-									<img src="../img/cruz_marron.png" alt="Icono cruz" id="cerrarBoton">
-									<div class="contenidoDialogo">
-										<h2 id="infoTitulo"></h2>
-										<div id="infoContenido">
-											<p><span id="infoDesc"></span></p>
-										</div>
-									</div>
-								</dialog>
-							</div>
-                        </div>
-                        <div id="paramFi">
-							<div id="contenTitParamFi">
-								<h2 class="tituloParamFi">PARÁMETROS FÍSICOS</h2>
-							</div>
-							<div id="contenTitParamFi">
-								<h4>Simulador Interactivo: </h4>
-							</div>
-							<div id="simuladorParamFi">
-								<div class="slider-group">
-									<label>Granulometría (micras): <span id="gVal">250</span></label>
-									<input type="range" min="50" max="500" value="250" id="granulometria">
-								</div>
-								<div class="slider-group">
-									<label>Humedad (%): <span id="hVal">13</span></label>
-									<input type="range" min="10" max="20" value="13" id="humedad">
-								</div>
-								<div class="slider-group">
-									<label>Densidad (g/mL): <span id="dVal">0.6</span></label>
-									<input type="range" min="0.4" max="0.9" step="0.05" value="0.6" id="densidad">
-								</div>
-								<div class="slider-group">
-									<label>Temperatura almacenamiento (°C): <span id="tVal">22</span></label>
-									<input type="range" min="15" max="35" value="22" id="temperatura">
-								</div>
-								<div class="status-box" id="resultado">
-									<p><strong>Recomendación:</strong> Cargando...</p>
-									<p><strong>Estado de conservación:</strong> Cargando...</p>
-									<p><strong>Uso ideal:</strong> Cargando...</p>
-								</div>
-							</div>
-                        </div>
-						<div id="paramQui">
-							<div class="contenAprender">
-								<h2 class="tituloAprender">CENIZAS</h2>
-							</div>
-							<div class="contenTarjetas">
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											¿Qué indican?
-										</div>
-										<div class="back" id="curiosidad">
-											El contenido de cenizas en las harinas indica la cantidad de minerales presentes y refleja el grado de contaminación de salvado u otras materias, proporcionando información sobre el proceso de molienda, las impurezas y el porcentaje de extracción.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											¿Para qué sirven?
-										</div>
-										<div class="back" id="curiosidad">
-											El contenido de cenizas es la herramienta que se utiliza para medir la cantidad de salvado que queda en la harina. Normalmente, el contenido de cenizas en la harina oscila entre el 0,35% y el 2%.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											¿Qué representan?
-										</div>
-										<div class="back" id="curiosidad">
-											La cantidad de cenizas representa el contenido total de minerales en los alimentos. La determinación del contenido de cenizas puede ser importante por varias razones, ya que forma parte del análisis próximo para la evaluación nutricional.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											¿Cómo se miden?
-										</div>
-										<div class="back" id="curiosidad">
-											La medición de cenizas consiste en pesar una cantidad precisa de harina en un crisol, calcinarla en un horno de mufla a unos 550 °C para quemar toda la materia orgánica, y luego enfriar y pesar el crisol con las cenizas. La diferencia de peso indica la cantidad de cenizas, y así se calcula el porcentaje de minerales presentes en la harina.
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="contenAprender">
-								<h2 class="tituloAprender">PROTEÍNAS</h2>
-							</div>
-							<div class="contenTarjetas">
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											¿Qué representan?
-										</div>
-										<div class="back" id="curiosidad">
-											Las proteínas contenidas en la harina de trigo representan en promedio el 12% del peso de la cariópside y tienen principalmente funciones estructurales y enzimáticas.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Funciones 
-										</div>
-										<div class="back" id="curiosidad">
-											Las proteínas estructurales confieren rigidez a los componentes biológicos que de otro modo serían fluidos, en cambio, las proteínas enzimáticas aceleran las reacciones químicas en la masa. 
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Tipos
-										</div>
-										<div class="back" id="curiosidad">
-											Las proteínas están divididas en solubles (albúmina y globulina), que representan el 20% del total, e insolubles (gliadina y glutenina), que constituyen el restante 80%. No todos los tipos de trigo contienen las mismas proporciones. La genética del trigo define la calidad del gluten. 
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Proteínas hidrófobas
-										</div>
-										<div class="back" id="curiosidad">
-											Las gliadinas y las gluteninas son proteínas hidrófobas. Las primeras se encargan de la extensibilidad de la masa, mientras que las gluteninas de su tenacidad. Durante la acción mecánica de amasado, gracias al agua, se ligan para formar una malla tridimensional llamada gluten.
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="contenAprender">
-								<h4 class="tituloAprender">Existen varios instrumentos para medir las proteínas en la harina. Algunos de los más comunes son: </h4>
-							</div>
-							<div class="contenTarjetas">
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											NIR
-										</div>
-										<div class="back" id="curiosidad">
-											Esta técnica utiliza luz infrarroja para analizar la composición de la harina. Los analizadores NIR pueden medir rápidamente el contenido de proteínas, humedad, cenizas y otros componentes de la harina. Son muy utilizados en la industria alimentaria debido a su rapidez y precisión.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Método Kjeldahl
-										</div>
-										<div class="back" id="curiosidad">
-											Este método químico es uno de los más precisos para determinar el contenido de proteínas. Implica la digestión de la harina con ácido sulfúrico, seguida de una serie de reacciones químicas que permiten cuantificar el nitrógeno presente. El contenido de nitrógeno se utiliza para calcular el contenido de proteínas.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Método Dumas
-										</div>
-										<div class="back" id="curiosidad">
-											Este método también se basa en la medición del nitrógeno, pero utiliza la combustión de la muestra en lugar de la digestión ácida. Es un método rápido y preciso, y se utiliza cada vez más en la industria alimentaria. La elección del instrumento dependerá de las necesidades específicas del usuario.
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="contenAprender">
-								<h2 class="tituloAprender">GLUTEN</h2>
-							</div>
-							<div class="contenTarjetas">
-									<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											¿Qué es?
-										</div>
-										<div class="back" id="curiosidad">
-											El gluten se caracteriza por una estructura viscosa, compacta y elástica, capaz de absorber el agua durante el amasado y de retener el dióxido de carbono durante la fermentación.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Factores
-										</div>
-										<div class="back" id="curiosidad">
-											Un gluten bien desarrollado depende de la calidad de las proteínas contenidas en la harina y del correcto proceso de amasado. El tiempo de amasado, la absorción, el tiempo de fermentación y el volumen del producto acabado son aspectos que definen la fuerza de la harina. 
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Harina fuerte
-										</div>
-										<div class="back" id="curiosidad">
-											Una harina con alto contenido en gluten forma una malla glutínica densa que retiene bien los gases de fermentación, lo que requiere fermentaciones más largas. La harina fuerte absorbe más agua, resultando en productos voluminosos y bien alveolados.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Harina débil
-										</div>
-										<div class="back" id="curiosidad">
-											La harina débil no tiene mucha capacidad para absorber el agua y, si el amasado se alarga 
-											unos minutos más, surgen varios problemas: la masa resulta pegajosa, difícil de formar, y retiene mal 
-											el dióxido de carbono producido por la levadura, lo que da lugar a productos poco elaborados y de 
-											mala calidad.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Gluten y nutrición
-										</div>
-										<div class="back" id="curiosidad">
-											Todos los cereales que contienen gluten han sido siempre una fuente primaria de sustento y es aconsejable consumirlos para conseguir una nutrición equilibrada. De lo contrario, quienes padecen una intolerancia permanente al gluten se ven obligados a eliminar de su dieta los alimentos que lo contienen.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											"Sin gluten"
-										</div>
-										<div class="back" id="curiosidad">
-											Consumir productos "sin gluten" sin necesidad médica puede llevar a deficiencias de nutrientes y, además, estos productos suelen contener más grasas saturadas y tener un alto índice glucémico, lo que puede ser perjudicial para la salud.
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="contenAprender">
-								<h2 class="tituloAprender">ALMIDÓN</h2>
-							</div>
-							<div class="contenTarjetas">
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											¿Qué es?
-										</div>
-										<div class="back" id="curiosidad">
-											El almidón representa el 69 % de la harina de trigo. Se presenta en dos formas, almidón nativo o 
-											intacto y almidón dañado.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Almidón nativo 
-										</div>
-										<div class="back" id="curiosidad">
-											El almidón nativo (57 %) es el que más contribuye a la absorción de la harina, 
-											puesto que es el componente mayoritario.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Almidón dañado 
-										</div>
-										<div class="back" id="curiosidad">
-											El almidón dañado (8 %) se obtiene durante la molienda del trigo, en la que la fracción de harina va
-											reduciendo su tamaño mediante la presión que ejercen los molinos.Esto genera una fractura en el gránulo que permite que el agua acceda al interior de este en las zonas amorfas.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Friabilidad del grano
-										</div>
-										<div class="back" id="curiosidad">
-											El almidón dañado, más presente en trigos vítreos, está directamente relacionado con la friabilidad del grano y tiene un impacto importante en la absorción de agua y en la fermentación de la masa, a pesar de estar en menor proporción que el almidón nativo.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Fermentación primaria
-										</div>
-										<div class="back" id="curiosidad">
-											La harina de trigo contiene un 2-3% de azúcares simples (como glucosa) que las levaduras asimilan directamente, iniciando la fermentación. Una vez agotados estos azúcares, el proceso fermentativo se detiene temporalmente.
-										</div>
-									</div>
-								</div>
-								<div class="sabiasQue">
-									<div class="tarjeta">
-										<div class="front">
-											Reactivación
-										</div>
-										<div class="back" id="curiosidad">
-											Para continuar la fermentación, las enzimas α-amilasa y β-amilasa presentes en la harina hidrolizan el almidón (dañado o gelatinizado), generando oligosacáridos y maltosa. Este azúcar doble (maltosa) es asimilable por las levaduras, reiniciando la producción de CO₂ y etanol.
-										</div>
-									</div>
-								</div>
-							</div>
-                        </div>
-                        <div id="apliDiet">
-							<div id="contenTirApli">
-								<h2 class="tituloApli">APLICACIONES DIETÉTICAS</h2>
-							</div>
-							<div id="contenInfoApli">
-								<div class="tarjetaApli" id="dietaProteicaBtn">
-									Dietas altas en proteína y panificación
-								</div>
-								<div class="tarjetaApli" id="dietaGlutenBtn">
-									Dietas bajas en gluten o sin gluten
-								</div>
-								<div class="tarjetaApli" id="dietaCarboBtn">
-									Dietas bajas en carbohidratos y cetogénicas
-								</div>
-								<div class="tarjetaApli" id="dietaFibraBtn">
-									Dietas altas en fibra y digestión saludable
-								</div>
-								<div class="tarjetaApli" id="dietaGlucemicaBtn">
-									Dietas de control glucémico (diabetes)
-								</div>
-								<div class="tarjetaApli" id="infoDetalladaBtn">
-									Aplicaciones dietéticas detalladas
-								</div>
-							</div>
-							<div id="dietaProteica" class="dietas">
-								<img src="../img/cruz_marron.png" alt="" class="cerrarCruz">
-								<h2>Dietas altas en proteína y panificación (Harinas fuertes, W > 250)</h2>
-								<p><strong>Criterio analítico clave:</strong> Alto contenido de proteína (10-15%) y gluten.</p>
-								<p><strong>Aplicaciones dietéticas:</strong></p>
-								<ul>
-									<li>Indicadas para personas con alta demanda energética y proteica (atletas, personas con alto gasto calórico).</li>
-									<li>Útiles en dietas hiperproteicas para mejorar la saciedad.</li>
-									<li>Usadas en panificación con fermentaciones largas y masas elásticas (panes de fuerza, pan integral, masas fermentadas).</li>
-								</ul>
-							</div>
-							<div id="dietaGluten" class="dietas">
-								<img src="../img/cruz_marron.png" alt="" class="cerrarCruz">
-								<h2>Dietas bajas en gluten o sin gluten</h2>
-								<p><strong>Criterio analítico clave:</strong> Bajo contenido de gluten o sin gluten (harinas de arroz, maíz, almendra, garbanzo).</p>
-								<p><strong>Aplicaciones dietéticas:</strong></p>
-								<ul>
-									<li>Apta para personas con enfermedad celíaca o sensibilidad al gluten no celíaca.</li>
-									<li>Requiere mezclas con almidones y espesantes para mejorar la textura en panadería.</li>
-									<li>Se usa en productos sin gluten como panes, galletas y pastas especiales.</li>
-								</ul>
-							</div>
-							<div id="dietaCarbo" class="dietas">
-								<img src="../img/cruz_marron.png" alt="" class="cerrarCruz">
-								<h2>Dietas bajas en carbohidratos y cetogénicas</h2>
-								<p><strong>Criterio analítico clave:</strong> Bajo contenido de almidón, alto en grasas y proteínas (harinas de frutos secos, coco, linaza, garbanzo).</p>
-								<p><strong>Aplicaciones dietéticas:</strong></p>
-								<ul>
-									<li>Recomendadas en dietas cetogénicas y bajas en carbohidratos.</li>
-									<li>Usadas en productos horneados bajos en carbohidratos (pan keto, postres sin azúcar).</li>
-									<li>Mayor contenido de fibra y grasas saludables, que ayuda a la saciedad.</li>
-								</ul>
-							</div>
-							<div id="dietaFibra" class="dietas">
-								<img src="../img/cruz_marron.png" alt="" class="cerrarCruz">
-								<h2>Dietas altas en fibra y digestión saludable</h2>
-								<p><strong>Criterio analítico clave:</strong> Alto contenido de fibra (>10%) y bajo índice glucémico.</p>
-								<p><strong>Aplicaciones dietéticas:</strong></p>
-								<ul>
-									<li>Indicadas para personas con estreñimiento y control de peso (aumenta saciedad).</li>
-									<li>Beneficiosas para el control del azúcar en sangre (diabetes).</li>
-									<li>Harinas integrales y de salvado se usan en panes, galletas y cereales ricos en fibra.</li>
-								</ul>
-							</div>
-							<div id="dietaGlucemica" class="dietas">
-								<img src="../img/cruz_marron.png" alt="" class="cerrarCruz">
-								<h2>Dietas para control glucémico (diabetes)</h2>
-								<p><strong>Criterio analítico clave:</strong> Bajo índice glucémico (IG), alto contenido de fibra y proteínas.</p>
-								<p><strong>Aplicaciones dietéticas:</strong></p>
-								<ul>
-									<li>Harinas integrales (centeno, avena, almendra) para controlar la glucosa en sangre.</li>
-									<li>Reducción de picos de azúcar en pacientes diabéticos.</li>
-									<li>Uso en panes y pastas con menor impacto glicémico.</li>
-								</ul>
-							</div>
-							<div id="infoDetallada" class="dietas">
-								<img src="../img/cruz_marron.png" alt="" class="cerrarCruz">
-								<h2>Información detallada de las aplicaciones dietéticas</h2>
-								<h3 class="subtituloDetallado">Humedad</h3>
-								<ul>
-									<li><span>Disponibilidad de nutrientes</span> 
-										<p>La humedad influye directamente en la solubilidad y disponibilidad de los nutrientes presentes en la harina, afectando su valor nutricional y su comportamiento en procesos como la cocción o fermentación.</p>
-									</li>
-									<li><span>Actividad enzimática</span> 
-										<p>Un mayor contenido de agua activa las enzimas naturales de la harina, lo que puede modificar las características de la masa y acelerar reacciones importantes en la panificación</p>
-									</li>
-									<li><span>Fermentación</span> 
-										<p>La cantidad de humedad condiciona la fermentación, ya que afecta la hidratación del gluten y del almidón, esenciales para el desarrollo de la masa y la retención de gases.</p>
-									</li>
-									<li><span>Conservación y seguridad</span> 
-										<p>El exceso de humedad favorece el crecimiento microbiano y la aparición de mohos, reduciendo la vida útil del producto y comprometiendo su seguridad alimentaria.</p>
-									</li>
-								</ul>
 
-								<h3 class="subtituloDetallado">Cenizas</h3>
-								<ul>
-									<li><span>Indicador del contenido mineral</span> 
-										<p>Las cenizas permiten estimar la cantidad total de minerales (calcio, hierro, magnesio, fósforo, zinc, etc.) en una harina</p>
-										<p>Harinas con mayor contenido de cenizas (por ejemplo, harina integral) tienden a ser más ricas en micronutrientes que las refinadas.</p>
-									</li>
-									<li><span>Clasificación de harinas</span> 
-										<p>En muchos países (como en Europa), las harinas se clasifican según su contenido de cenizas (por ejemplo, tipo 00, 0, 1, 2).</p>
-										<p>Esta clasificación ayuda a los profesionales de la nutrición a recomendar harinas más o menos refinadas, según las necesidades del paciente.</p>
-									</li>
-									<li><span>Evaluación de calidad nutricional</span> 
-										<p>Una harina con cenizas muy bajas puede indicar un grado alto de refinamiento y, por lo tanto, pérdida de fibra y minerales.</p>
-										<p>En dietas terapéuticas (como anemia o deficiencias minerales), se pueden preferir harinas con mayor contenido de cenizas.</p>
-									</li>
-									<li><span>Control de fraude o adulteración</span> 
-										<p>El análisis de cenizas puede detectar si se han mezclado harinas con otras sustancias minerales o si se ha falsificado el grado de refinamiento.</p>
-										<P>Esto es importante en programas de alimentación pública o etiquetado nutricional.</P>
-									</li>
-								</ul>
-
-								<h3 class="subtituloDetallado">Proteínas</h3>
-								<ul>
-									<li><span>Reducción del índice glucémico</span> 
-										<p>El contenido proteico de estas harinas ayuda a ralentizar la digestión y absorción de los hidratos de carbono, favoreciendo un mejor control de la glucemia en personas con diabetes tipo 2 o resistencia a la insulina.</p>
-									</li>
-									<li><span>Complemento proteico en dietas vegetarianas o veganas</span> 
-										<p>Estas harinas vegetales aportan proteínas de buena calidad que, combinadas adecuadamente, pueden sustituir fuentes animales, ayudando a cubrir requerimientos proteicos.</p>
-									</li>
-								</ul>
-
-								<h3 class="subtituloDetallado">Gluten</h3>
-								<ul>
-									<li><span>Dietas hiperproteicas y deportivas</span> 
-										<p>El gluten, al ser una proteína de alto contenido en aminoácidos como la glutamina, es útil en dietas que requieren mayor aporte proteico, como en personas físicamente activas o con necesidades aumentadas de reparación muscular.</p>
-									</li>
-									<li><span>Panificación y estructura alimentaria</span> 
-										<p>En el ámbito dietético, el gluten es fundamental para elaborar panes y productos con buena estructura, elasticidad y volumen, especialmente en dietas que requieren alimentos texturizados o de alta densidad energética (por ejemplo, en pacientes con desnutrición).</p>
-									</li>
-									<li><span>Dietas sin gluten (gluten free)</span> 
-										<p>La ausencia de gluten es indispensable en la alimentación de personas con enfermedad celíaca, sensibilidad al gluten no celíaca y alergia al trigo. Su eliminación requiere una adecuada planificación para evitar déficits nutricionales, especialmente de proteínas, hierro y vitaminas del grupo B.</p>
-									</li>
-								</ul>
-
-								<h3 class="subtituloDetallado">Almidón</h3>
-								<ul>
-									<li><span>Fuente principal de energía</span> 
-										<p>El almidón aporta glucosa, el combustible preferido por el cerebro y los músculos. En dietas equilibradas, debe representar el mayor porcentaje de los carbohidratos totales.</p>
-									</li>
-									<li><span>Control glucémico</span> 
-										<p>El tipo de almidón (rápido o lento) y su grado de gelatinización influye en el índice glucémico (IG) del alimento.</p>
-										<p>Harinas con almidón resistente o menos procesadas (como las integrales) tienen IG más bajo, útiles en diabetes, resistencia a la insulina y síndrome metabólico.</p>
-									</li>
-									<li><span>Efecto prebiótico del almidón resistente</span> 
-										<p>Parte del almidón no se digiere en el intestino delgado y llega al colon, donde actúa como fibra fermentable.</p>
-										<p>Favorece el crecimiento de bacterias beneficiosas (ej. bifidobacterias), mejora la salud intestinal y tiene efecto antiinflamatorio</p>
-									</li>
-								</ul>
-							</div>
+						<!-- VALOR NUTRICIONAL -->
+                        <div id="valorNutri">
+							<h2>VALOR NUTRI</h2>
                         </div>
+						<!-- ----------------- -->
+
+						<!-- INGESTA RECOMENDADAS Y OBJETIVOS NUTRICIONALES -->
+						<div id="ingestaRecomendada">
+							<h2>INGESTA RECOMENDADAS Y OBJETIVOS NUTRICIONALES</h2>
+                        </div>
+						<!-- ---------------------------------------------- -->
+
+						<!-- RACIONES Y MEDIDAS CASERAS -->
+						<div id="racioMedi">
+							<h2>RACIONES Y MEDIDAS CASERAS</h2>
+                        </div>
+						<!-- -------------------------- -->
+
+						<!-- PATOLOGÍAS Y FISIOLOGÍAS -->
+						<div id="patoFisio">
+							<h2>PATOLOGÍAS Y FISIOLOGÍAS</h2>
+                        </div>
+						<!-- ------------------------ -->
+
+						<!-- MÉTODOS DE ANÁLISIS -->
+                        <div id="metodoAnalisis">
+							<h2>MÉTODOS DE ANÁLISIS</h2>
+                        </div>
+						<!-- ------------------- -->
+
+						<!-- CURIOSIDADES -->
+						<div id="curiosidades">
+							<h2>CURIOSIDADES</h2>
+                        </div>
+						<!-- ------------ -->
                     </div>
 				</article>
 			</section>
