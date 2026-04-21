@@ -76,21 +76,27 @@ main {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-
 }
 
 div.producto {
     padding: 20px;
     text-align: center;
     font-size: 1.2rem;
-    font-weight: bold;
     color: #333;
-    height: 150px; 
+    height: 16rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 10px; 
+}
+
+div.producto:hover {
+    transform: scale(1.1);
+}
+
+div.producto:active {
+    transform: scale(0.95);
 }
 
 div#productoHuevos{
@@ -284,12 +290,11 @@ div#productoHarina::after {
     font-style:normal;
 }
 
-
 div#productoHuevos .nombre{
     color: #7a563c;
     font-size: 2rem;
     position: absolute;
-    margin-top: 70px;
+    margin-top: 7rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -298,7 +303,7 @@ div#productoHuevos .flecha{
     color: #7a563c;
     font-size: 3rem;
     position: absolute;
-    margin-top:130px;
+    margin-top: 14rem;
     z-index: 1;
     font-family: 'Gagalin';
 
@@ -308,7 +313,7 @@ div#productoAceite .nombre{
     color: #fadd10;
     font-size: 2rem;
     position: absolute;
-    margin-top: 80px;
+    margin-top: 7rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -317,7 +322,7 @@ div#productoAceite .flecha{
     color: #fadd10;
     font-size: 3rem;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 14rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -326,7 +331,7 @@ div#productoLeche .nombre{
     color: #9da6a4;
     font-size: 2rem;
     position: absolute;
-    margin-top: 90px;
+    margin-top: 7rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -335,7 +340,7 @@ div#productoLeche .flecha{
     color: #9da6a4;
     font-size: 3rem;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 14rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -344,7 +349,7 @@ div#productoCarne .nombre{
     color: #6f1e1e;
     font-size: 2rem;
     position: absolute;
-    margin-top: 90px;
+    margin-top: 7rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -353,7 +358,7 @@ div#productoCarne .flecha{
     color: #6f1e1e;
     font-size: 3rem;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 14rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -362,7 +367,7 @@ div#productoPescado .nombre{
     color: #ee9157;
     font-size: 2rem;
     position: absolute;
-    margin-top: 90px;
+    margin-top: 7rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -371,7 +376,7 @@ div#productoPescado .flecha{
     color: #ee9157;
     font-size: 3rem;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 14rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -380,7 +385,7 @@ div#productoHarina .nombre{
     color: #604c3a;
     font-size: 2rem;
     position: absolute;
-    margin-top: 90px;
+    margin-top: 7rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -389,7 +394,7 @@ div#productoHarina .flecha{
     color: #604c3a;
     font-size: 3rem;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 14rem;
     z-index: 1;
     font-family: 'Gagalin';
 }
@@ -423,7 +428,6 @@ footer{
     flex-direction: column; 
     justify-content: center;
     gap: 2px;
-    
 }  
 
 .doodleFooter .circulo-container{
@@ -523,7 +527,6 @@ footer{
     list-style: none; 
     padding: 0; 
     margin: 0;
-    
 }
 
 .contenedorPrivacidad ul li {
@@ -751,7 +754,7 @@ footer{
     }
 
     div.producto {
-        height: 250px; 
+        height: 24rem; 
     }
     
     #productoHuevos img {
@@ -780,62 +783,62 @@ footer{
 
     div#productoHuevos .nombre{
         font-size: 3rem;
-        margin-top: 100px;
+        margin-top: 10rem;
     }
 
     div#productoHuevos .flecha{
         font-size: 5rem;
-        margin-top:170px;
+        margin-top: 20rem;
     }
 
     div#productoAceite .nombre{
         font-size: 3rem;
-        margin-top: 110px;
+        margin-top: 10rem;
     }
 
     div#productoAceite .flecha{
         font-size: 5rem;
-        margin-top: 180px;
+        margin-top: 20rem;
     }
 
     div#productoLeche .nombre{
         font-size: 3rem;
-        margin-top: 130px;
+        margin-top: 10rem;
     }
 
     div#productoLeche .flecha{
         font-size: 5rem;
-        margin-top: 190px;
+        margin-top: 20rem;
     }
 
     div#productoCarne .nombre{
         font-size: 3rem;
-        margin-top: 130px;
+        margin-top: 10rem;
     }
 
     div#productoCarne .flecha{
         font-size: 5rem;
-        margin-top: 190px;
+        margin-top: 20rem;
     }
 
     div#productoPescado .nombre{
         font-size: 3rem;
-        margin-top: 140px;
+        margin-top: 10rem;
     }
 
     div#productoPescado .flecha{
         font-size: 5rem;
-        margin-top: 200px;
+        margin-top: 20rem;
     }
 
     div#productoHarina .nombre{
         font-size: 3rem;
-        margin-top: 140px;
+        margin-top: 10rem;
     }
 
     div#productoHarina .flecha{
         font-size: 5rem;
-        margin-top: 200px;
+        margin-top: 20rem;
     }
 
     #tituloProduc{
@@ -922,7 +925,7 @@ footer{
     }
 
     div.producto {
-        height: 350px; 
+        height: 35rem; 
     }
     
     #productoHuevos img {
@@ -952,62 +955,62 @@ footer{
     
     div#productoHuevos .nombre{
         font-size: 4rem;
-        margin-top: 150px;
+        margin-top: 15rem;
     }
 
     div#productoHuevos .flecha{
         font-size: 6rem;
-        margin-top:230px;
+        margin-top: 28rem;
     }
 
     div#productoAceite .nombre{
         font-size: 4rem;
-        margin-top: 150px;
+        margin-top: 15rem;
     }
 
     div#productoAceite .flecha{
         font-size: 6rem;
-        margin-top: 230px;
+        margin-top: 28rem;
     }
 
     div#productoLeche .nombre{
         font-size: 4rem;
-        margin-top: 165px;
+        margin-top: 15rem;
     }
 
     div#productoLeche .flecha{
         font-size: 6rem;
-        margin-top: 240px;
+        margin-top: 28rem;
     }
 
     div#productoCarne .nombre{
         font-size: 4rem;
-        margin-top: 190px;
+        margin-top: 15rem;
     }
 
     div#productoCarne .flecha{
         font-size: 6rem;
-        margin-top: 270px;
+        margin-top: 28rem;
     }
 
     div#productoPescado .nombre{
         font-size: 4rem;
-        margin-top: 190px;
+        margin-top: 15rem;
     }
 
     div#productoPescado .flecha{
         font-size: 6rem;
-        margin-top: 270px;
+        margin-top: 28rem;
     }
 
     div#productoHarina .nombre{
         font-size: 4rem;
-        margin-top: 190px;
+        margin-top: 15rem;
     }
 
     div#productoHarina .flecha{
         font-size: 6rem;
-        margin-top: 270px;
+        margin-top: 28rem;
     }
 
     #tituloProduc{

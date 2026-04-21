@@ -1,4 +1,5 @@
 /* Default ---- < 400px */
+/* COMENTAR TODO: ctrl + ç */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-	gap: 6px;
+	gap: 6px;/**/
 }
 
 #pestannas li {
@@ -50,6 +51,7 @@ body{
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s;
+    
 }
 
 #pestannas li a:hover {
@@ -60,7 +62,7 @@ body{
 #pestannas .ui-tabs-active a {
     background-color: #edc454;
     font-weight: bold;
-    border: 2px solid #c3981d;
+    border: 2px solid #c3981d;/**/
 }
 
 #pestannas .ui-state-active {
