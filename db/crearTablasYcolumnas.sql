@@ -23,3 +23,7 @@ CREATE TABLE contenido (
   FOREIGN KEY (id_alimento) REFERENCES alimento(id_alimento)
 );
 
+-- si quieres descripcion estos sea que puede dejar espacio puede usar este codigo
+-- AlTER TABLE alimento MODIFY descripcion TEXT NULL;
+-- AlTER TABLE alimento MODIFY imagen_url VARCHAR(255) NULL;
+
