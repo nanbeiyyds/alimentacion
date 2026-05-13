@@ -1,0 +1,132 @@
+:root {
+    /* FUENTES */
+    --font-primary: 'Gliker', sans-serif;
+    --font-secondary: 'LeagueSpartan', sans-serif;
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('/fonts/Gliker-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('/fonts/LeagueSpartan-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Esto afectará a párrafos, elementos de lista y texto plano dentro de .general */
+.general, 
+.general li, 
+.general p, 
+.general span{
+    font-size: 1.3rem; /* El tamaño que desees para el texto normal */
+    font-family: var(--font-secondary), sans-serif;
+}
+
+.general ol~div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--letra);
+}
+
+/* Luego, defines el tamaño de los encabezados por separado */
+.general h2, 
+.general h3 {
+    font-family: var(--font-primary), sans-serif;
+    color: var(--color-principal);
+    padding: 0.5rem 0 1rem 0; /* T R B L */
+}
+
+.general .contenido {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin: 1rem;
+    display: grid;
+    /* Por defecto, una sola columna que ocupa todo el ancho */
+    grid-template-columns: 1fr;
+}
+
+.general .contenido div {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border: 4px solid var(--color-capa1);
+    border-radius: 60px;
+
+    display: flex;
+    flex-direction: column;   /* Alinea h3 y ol uno debajo del otro */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.general .contenido ol {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background: var(--color-capa3);
+    border-radius: 30px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.general .contenido ol li {
+    color: white;
+    margin: 0.8rem;
+}
+
+.general .contenido ol.enumerar li {
+    background: white;
+    border-radius: 30px;
+    color: var(--letra);
+    margin: 0;
+    padding: 5px;
+}
+
+.general .contenido .galeria {
+    flex-wrap: wrap; /* Para que bajen si la caja se estrecha mucho */
+}
+
+.general .contenido .galeria img {
+    width: 120px; /* Tamaño controlado */
+    height: 120px;
+    object-fit: contain; /* Para que la imagen no se deforme */
+    background: white;
+    border-radius: 50%; /* Imágenes circulares quedan muy bien */
+    border: 2px dashed var(--color-capa3);
+    transition: transform 0.3s ease;
+}
+
+.general .contenido .galeria img:active {
+    transform: scale(4); /* Un zoom de 2.5 ya es bastante grande y más controlable */
+    position: relative;    /* Asegura que la imagen se ponga por encima de las demás */
+    z-index: 10;           /* La trae al frente */
+    border-style: solid;   /* Cambia el dashed a sólido al presionar para un efecto visual */
+}
+
+/* ===================== MEDIA QUERY  768px  ================================= */
+@media (min-width: 768px) { /* A partir de este tamaño de ventana */
+    .general .contenido {
+        /* Esto crea las columnas automáticas */
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        gap: 2rem;
+    }
+
+    .general .contenido div {
+        /* IMPORTANTE: quitamos el margin lateral para que no rompa el Grid */
+        margin: 0; 
+    }
+}

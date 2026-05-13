@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+}
+
+#pestannas {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-letra-pestannas);
+}
+
+#pestannas ol:not(.enumerar) {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ol.enumerar {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+#pestannas li {
+    flex: 1 1 0;
+	width: 100%;
+    border: 2px solid var(--color-principal);
+}
+
+#pestannas li a {
+	display: block;
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+	color: var(--color-letra-pestannas);
+    background-color: var(--color-principal);
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#pestannas li a:hover {
+    background-color: var(--color-hover);
+    color: white;
+}
+
+#pestannas .ui-tabs-active a {
+    background-color: var(--color-active);
+    font-weight: bold;
+    border: 2px solid var(--color-principal);
+}
+
+#pestannas  #pestannasMenu .ui-state-active {
+    border: none;
+    box-shadow: none;
+}
+
+#pestannas .ui-tabs-panel {
+    border: none;
+    padding: 0;
+}
+
+#pestannas .ui-widget-header {
+    border: none;
+    background-color: var(--color-1);
+}
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+	#pestannas li a {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+/* ===================== MEDIA QUERY  500px - 800px  ================================= */
+@media (min-width: 501px) {
+	#pestannas li {
+        flex: 1 1 0;
+    }
+
+    #pestannas li a {
+        font-size: 17px;
+        padding: 7px;
+    }
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+    #pestannas ol {
+        flex-direction: row;
+	}
+
+	#pestannas li {
+		width: auto;
+        flex: 1 1 120px;;
+	}
+
+    #pestannas li a {
+        font-size: 19px;
+        padding: 8px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
+@media (min-width: 1001px) {
+	#pestannas li a {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+	#pestannas li a {
+        font-size: 23px;
+        padding: 13px;
+    }
+}

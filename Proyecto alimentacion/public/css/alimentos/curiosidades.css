@@ -1,0 +1,161 @@
+#contenTarjetas{
+    display: grid;
+    /* Esto crea las columnas automáticas sin Media Queries */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('/fonts/Gliker-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('/fonts/LeagueSpartan-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sabiasQue {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    perspective: 1000px;
+}
+
+.tarjeta {
+    width: 100%;
+    min-height: 310px;
+    height: auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.tarjeta.flipped {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid var(--color-principal);
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.front {
+    background: var(--color-fondo);
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--color-principal);
+}
+
+.back h3 {
+    color: var(--color-principal);
+}
+
+.back {
+    background: var(--color-fondo-blanco);
+    transform: rotateY(180deg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: var(--letra-curiosidades);
+}
+
+#contenAprender{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+    color: var(--color-principal);
+    font-size: 15px;
+}
+
+#contenAprender img{
+    width: 25px;
+    margin: 8px;
+}
+
+#inter1 {
+    transform: rotate(-15deg);
+}
+
+#inter2 {
+    transform: rotate(15deg);
+}
+
+
+/* ===================== MEDIA QUERY  400px - 500px  ================================= */
+@media (min-width: 400px) {
+    #contenAprender{
+        font-size: 1.2rem;
+    }
+
+    #contenAprender img{
+        width: 35px;
+        margin: 10px;
+    }
+}
+
+/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
+@media (min-width: 801px) {
+    #contenAprender{
+        font-size: 1.4rem;
+    }
+
+    #contenAprender img{
+        width: 45px;
+    }
+
+    .front {
+        font-size: 2rem;
+    }
+}
+
+/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
+@media (min-width: 1201px) {
+    #contenAprender{
+        font-size: 1.6rem;
+    }
+
+    #contenAprender img{
+        width: 55px;
+    }
+}
+
+/* ===================== MEDIA QUERY  1601px  ================================= */
+@media (min-width: 1601px) {
+    #contenAprender{
+        font-size: 1.8rem;
+    }
+
+    #contenAprender img{
+        width: 65px;
+    }
+}

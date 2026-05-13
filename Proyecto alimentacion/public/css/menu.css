@@ -1,0 +1,142 @@
+/* Default */
+.menuHTML {
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
+    background: var(--color-fondo-nav);
+    backdrop-filter: blur(6px);
+}
+
+.menu-item {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* TODOS los hijos ocupan espacio proporcional */
+.menu-item > li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+
+    background: var(--color-principal-footer-nav);
+    border: 1px solid var(--color-fondo-nav);
+
+	transition: background 0.3s ease;
+}
+
+.menu-item > li:hover, #menus li a:hover {
+	background: var(--color-fondo-nav);
+}
+
+/* menú central ocupa más */
+#menus {
+    flex: 100%; /* Hacer que intente ocupar todo */
+    display: flex;
+	text-transform: capitalize; /* Mayúcusla la primera */
+}
+
+#menus ul {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center; /* Centra los li si no llenan todo el ancho */
+}
+
+#menus ul li {
+    flex: 1;
+    display: flex; /* Añadido para controlar el centrado del <a> */
+    justify-content: center;
+    align-items: center;
+}
+
+#menus a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%; /* Asegura que ocupe todo el alto del li */
+    padding: 15px 20px; /* Un poco más de aire a los lados */
+    
+    text-decoration: none;
+    color: white;
+    text-align: center; /* Refuerzo para el texto */
+    
+    background: var(--color-principal-footer-nav);
+    border: 1px solid var(--color-fondo-nav);
+    transition: background 0.3s ease;
+
+    /* Para que no haya bordes arriba y abajo */
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.menu-item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* botón oculto desktop */
+#menu-Btn {
+    display: none;
+}
+
+#user, #home {
+    padding: 0 15px; /* Espacio lateral de Home y User */
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .menu-item {
+        flex-wrap: wrap;
+    }
+
+    /* Reajuste de proporciones en fila superior */
+    #menu-Btn, #user, #home {
+        flex: 1;
+    }
+
+    .menu-item > li {
+        padding: 5px 0;
+    }
+
+    #menu-Btn {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* Desplegable Mobile */
+    #menus {
+        display: none;
+        flex: 100%; /* Ocupa toda la fila inferior */
+        width: 100%;
+
+        /* Quitar el borde que ay entre ellos */
+        border: none;
+        padding: 0;
+    }
+
+    #menus.open {
+        display: flex;
+    }
+
+    #menus ul {
+        flex-direction: column;
+    }
+
+    #menus a {
+        padding: 7px;
+    }
+}

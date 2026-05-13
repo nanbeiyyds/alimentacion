@@ -1,0 +1,30 @@
+:root {
+    --letra: black;
+    --color-principal: #c3981d;
+
+    --color-capa1: ;
+    --color-capa2: ;
+    --color-capa3: ;
+
+    /* CURIOSIDADES */
+    --color-fondo: #fae6d3;
+    --color-fondo-blanco: #ffffff;
+    --letra-curiosidades: #f1a16b;
+
+    /* FUENTES */
+    --font-principal: 'Gliker', sans-serif;
+    --font-secundario: 'LeagueSpartan', sans-serif;
+
+
+    /* PESTANNAS */
+    --color-1: #fef3d7;
+    --color-hover: #e2ba49;
+    --color-active: #edc454;
+    --color-letra-pestannas: white;
+
+
+    /* FOOTER y NAV*/
+    --color-principal-footer-nav: #c3981d;
+    --color-secundario-footer-nav: white;
+    --color-fondo-nav: #edc454;
+}

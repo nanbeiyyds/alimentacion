@@ -1,0 +1,30 @@
+:root {
+    --letra: black;
+    --color-principal: #e78224;
+
+    --color-capa1: #dbab89; /* InfoCascara */
+    --color-capa2: #9da6a4; /* InfoClara */
+    --color-capa3: #fab635; /* InfoYema */
+
+    /* CURIOSIDADES */
+    --color-fondo: #fae6d3;
+    --color-fondo-blanco: #ffffff;
+    --letra-curiosidades: #f1a16b;
+
+    /* FUENTES */
+    --font-principal: 'Gliker', sans-serif;
+    --font-secundario: 'LeagueSpartan', sans-serif;
+
+
+    /* PESTANNAS */
+    --color-1: #FBCBA3;
+    --color-hover: #eaa565;
+    --color-active: #eaa565;
+    --color-letra-pestannas: white;
+
+
+    /* FOOTER y NAV*/
+    --color-principal-footer-nav: #e78224;
+    --color-secundario-footer-nav: #FBCBA3;
+    --color-fondo-nav: #eaa565;
+}

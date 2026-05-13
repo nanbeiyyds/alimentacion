@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+viewBox="0 0 66.265732 83.819954"
+version="1.1"
+id="svg1"
+xml:space="preserve"
+sodipodi:docname="dibujo.svg"
+inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:svg="http://www.w3.org/2000/svg">
+    <sodipodi:namedview
+    id="namedview1"
+    pagecolor="#ffffff"
+    bordercolor="#000000"
+    borderopacity="0.25"
+    inkscape:showpageshadow="2"
+    inkscape:pageopacity="0.0"
+    inkscape:pagecheckerboard="0"
+    inkscape:deskcolor="#d1d1d1"
+    inkscape:document-units="mm"
+    inkscape:zoom="0.70710678"
+    inkscape:cx="127.98633"
+    inkscape:cy="258.09397"
+    inkscape:window-width="1920"
+    inkscape:window-height="991"
+    inkscape:window-x="-9"
+    inkscape:window-y="-9"
+    inkscape:window-maximized="1"
+    inkscape:current-layer="layer3" />
+    <defs id="defs1" />
+    <g
+    inkscape:groupmode="layer"
+    id="layer2"
+    inkscape:label="Cascara"
+    transform="translate(-72.32, -83.71)">
+        <path
+        style="fill:#dbab89; fill-opacity:1; stroke:#513015; stroke-width:0.739031; stroke-opacity:1"
+        d="m 83.91,99.62 c -2.51,3.57 -5.08,10.13 -5.08,10.13 -3.96,8.20 -5.42,16.53 -5.42,16.53 -2.77,14.61 3.50,24.14 3.50,24.14 6.41,10.84 15.34,13.95 15.34,13.95 9.85,3.96 18.52,2.51 18.52,2.51 2.11,-0.33 3.17,-0.57 4.61,-1.02 1.75,-0.55 3.78,-1.35 5.30,-2.21 2.18,-1.23 4.98,-3.04 6.26,-4.22 1.76,-1.62 3.12,-3.17 3.12,-3.17 22.07,-25.47 -5.88,-71.26 -23.57,-72.11 0,0 -2.89,-0.38 -6.46,0.83 -1.60,0.54 -3.79,1.63 -5.73,3.16 -1.27,1.00 -2.57,2.20 -3.80,3.37 0,0 -1.07,1.14 -2.45,2.63 -0.78,0.84 -1.46,1.70 -2.21,2.78 -0.51,0.73 -1.25,1.44 -1.91,2.67 z"
+        id="cascara"
+        sodipodi:nodetypes="ccccccsssccsscssc" />
+        <title>Cáscara</title>
+    </g>
+    <g
+    inkscape:groupmode="layer"
+    id="layer3"
+    inkscape:label="Clara"
+    transform="translate(-72.326128,-83.719788)">
+        <path
+        style="fill:#fffefe; fill-opacity:1; stroke:none; stroke-width:0.667872; stroke-opacity:1"
+        d="m 86.12,102.42 c -2.25,3.24 -4.57,9.21 -4.57,9.21 -3.56,7.45 -4.87,15.02 -4.87,15.02 -2.49,13.28 3.15,21.94 3.15,21.94 5.76,9.85 13.79,12.68 13.79,12.68 8.85,3.60 16.64,2.28 16.64,2.28 1.89,-0.30 2.85,-0.52 4.15,-0.93 1.58,-0.50 3.40,-1.23 4.77,-2.01 1.96,-1.12 4.47,-2.76 5.63,-3.84 1.58,-1.48 2.80,-2.88 2.80,-2.88 19.84,-23.15 -5.28,-64.76 -21.18,-65.53 0,0 -2.60,-0.34 -5.80,0.75 -1.44,0.49 -3.41,1.48 -5.15,2.88 -1.14,0.91 -2.31,2.00 -3.41,3.07 0,0 -0.96,1.04 -2.20,2.39 -0.70,0.77 -1.31,1.54 -1.99,2.52 -0.46,0.66 -1.12,1.31 -1.72,2.43 z"
+        id="clara" />
+        <title>Clara</title>
+    </g>
+    <g
+    inkscape:groupmode="layer"
+    id="layer4"
+    inkscape:label="Yema"
+    transform="translate(-72.326128,-83.719788)">
+        <g
+        id="yema"
+        transform="translate(58.371665,-95.041044)">
+            <ellipse 
+            style="fill:#ffb146; fill-opacity:1; stroke:#503015; stroke-width:0.659; stroke-dasharray:none; stroke-opacity:1"
+            id="path4" 
+            cx="47.68" 
+            cy="228.62" 
+            rx="18.78" 
+            ry="18.65" />
+            <path
+            style="fill:#ff9b11; fill-opacity:1; stroke:none; stroke-width:0.645935; stroke-dasharray:none; stroke-opacity:1"
+            d="m 58.89,214.22 c 15.04,12.22 4.71,33.60 -13.07,32.64 -9.03,-1.36 -12.35,-6.65 -12.35,-6.65 0,0 13.24,7.67 23.29,-2.95 0,0 9.23,-9.77 2.13,-23.03 z"
+            id="path5"
+            sodipodi:nodetypes="ccc" />
+            <path
+            style="fill:#ffffff; fill-opacity:1; stroke:none; stroke-width:0.259; stroke-dasharray:none; stroke-opacity:1"
+            d="m 47.73,213.74 c -12.90,3.03 -14.18,11.07 -14.22,13.95 -2.91,-4.10 4.00,-16.45 14.22,-13.95 z"
+            id="path7"
+            sodipodi:nodetypes="ccc" />
+            <title>Yema</title>
+        </g>
+    </g>
+</svg>
