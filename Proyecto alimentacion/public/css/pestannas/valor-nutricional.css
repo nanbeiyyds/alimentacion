@@ -1,0 +1,185 @@
+/* ============================================================
+   VARIABLES Y CONFIGURACIÓN BASE
+   ============================================================ */
+#valorNutri {
+    /* Estilos del Contenedor Padre */
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, var(--nutri-pestannas-bg));
+    font-family: var(--nutri-font-secundario);
+    color: var(--nutri-color-texto-front);
+}
+
+/* ============================================================
+   TITULO H2
+   ============================================================ */
+#valorNutri h2.tituloAlimento {
+    font-family: var(--nutri-font-principal);
+    color: var(--nutri-color-principal);
+    padding: 1rem 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ============================================================
+   ESTRUCTURA Y LAYOUT
+   ============================================================ */
+#valorNutri .nutrition-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#valorNutri .nutrition-grid, 
+#valorNutri .extra-info, 
+#valorNutri .comparison-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+#valorNutri .nutrition-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+#valorNutri .extra-info { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-top: 30px; }
+#valorNutri .comparison-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+/* ============================================================
+   COMPONENTES (Cards & Details)
+   ============================================================ */
+#valorNutri .nutrition-card {
+    background: var(--nutri-fondo-tarjeta-front);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--nutri-color-borde);
+    border-radius: 22px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#valorNutri .nutrition-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px var(--nutri-color-sombra-hover);
+}
+
+#valorNutri summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 22px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#valorNutri summary::-webkit-details-marker { display: none; }
+
+#valorNutri .summary-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#valorNutri .summary-left h3 {
+    font-size: 20px;
+    color: var(--nutri-color-texto-destacado);
+    font-family: var(--nutri-font-principal);
+    margin: 0 0 4px 0;
+}
+
+#valorNutri .summary-left p {
+    font-size: 14px;
+    color: var(--nutri-color-texto-back-li);
+    margin: 0;
+}
+
+#valorNutri .arrow { 
+    font-size: 22px; 
+    transition: 0.3s; 
+    color: var(--nutri-color-texto-back-li); /* Si querías que compartieran color */
+}
+
+#valorNutri details[open] .arrow { transform: rotate(180deg); }
+
+#valorNutri .card-content { padding: 10px 28px 30px; }
+
+/* ============================================================
+   ELEMENTOS INTERNOS (Items & Boxes)
+   ============================================================ */
+#valorNutri .icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 16px;
+    background: var(--nutri-pestannas-bg);
+    color: var(--nutri-color-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#valorNutri .nutrition-item, .info-box {
+    background: var(--nutri-fondo-tarjeta-back);
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid var(--nutri-color-borde);
+    transition: 0.3s;
+}
+
+#valorNutri .nutrition-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+#valorNutri .nutrition-item strong {
+    display: block;
+    margin: 12px 0 8px;
+    font-size: 24px;
+    color: var(--nutri-color-texto-destacado);
+}
+
+#valorNutri .nutrition-item p, .info-box p {
+    color: var(--nutri-color-texto-back-li);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#valorNutri .info-box h4 {
+    color: var(--nutri-color-texto-destacado);
+    font-family: var(--nutri-font-principal);
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#valorNutri .info-box ul { padding-left: 18px; }
+#valorNutri .info-box li {
+    margin-bottom: 10px;
+    color: var(--nutri-color-texto-back);
+    line-height: 1.5;
+}
+
+/* --- Etiquetas (Tags) --- */
+#valorNutri .tag {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+#valorNutri .agua { background: #38bdf8; }
+#valorNutri .carbo { background: #fb923c; }
+#valorNutri .grasa { background: #f87171; }
+#valorNutri .proteina { background: #34d399; }
+#valorNutri .minerales { background: #a78bfa; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+    #valorNutri { padding: 20px 15px; }
+    #valorNutri .section-title h2 { font-size: 24px; }
+    #valorNutri summary { padding: 18px; }
+    #valorNutri .card-content { padding: 10px 18px 22px; }
+}

@@ -148,8 +148,8 @@ return [
         'css' => [
             'huevo_banner.css',
             'huevo_general.css',
-            'huevo_infografia.css',
             'huevo_simulador.css',
+            'huevo_infografia.css',
         ],
 
         'secciones' => [

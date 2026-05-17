@@ -1,0 +1,37 @@
+:root {
+    /* FUENTES */
+    --font-primary: 'Gliker', sans-serif;
+    --font-secondary: 'LeagueSpartan', sans-serif;
+}
+
+/* ================= FUENTES ================= */
+
+@font-face {
+    font-family: 'Gliker';
+    src: url('/fonts/Gliker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('/fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ================= TÍTULOS ================= */
+
+h2.tituloAlimento {
+    font-family: var(--font-primary);
+    color: var(--color-principal);
+    padding: 1rem 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

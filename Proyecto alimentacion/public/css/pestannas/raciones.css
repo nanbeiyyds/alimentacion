@@ -1,0 +1,150 @@
+/* ============================================================
+   SECCIÓN: RACIONES Y MEDIDAS (Unificado y Corregido)
+   ============================================================ */
+#racioMedi {
+    padding: 60px 20px;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom, #ffffff, var(--raciones-pestannas-bg)); 
+}
+
+/* ============================================================
+   TITULO H2
+   ============================================================ */
+#racioMedi h2.tituloAlimento {
+    font-family: var(--raciones-font-principal);
+    color: var(--raciones-accent);
+    padding: 1rem 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ===== CONTENEDOR TIPO CARTA ===== */
+#racioMedi .ration-card {
+    max-width: 1050px;
+    margin: 0 auto 38px;
+    background: var(--raciones-bg-card);
+    border-radius: 22px;
+    padding: 38px;
+    border: 1px solid var(--raciones-border);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03), 0 12px 30px rgba(0,0,0,0.04);
+}
+
+#racioMedi .ration-card p {
+    color: var(--raciones-text-body);
+    line-height: 1.8;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* ===== TÍTULOS (H3) ===== */
+#racioMedi .ration-card h3 {
+    position: relative;
+    font-size: 24px;
+    color: var(--raciones-text-title);
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 14px;
+}
+
+#racioMedi .ration-card h3::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 70px; height: 4px;
+    border-radius: 20px;
+    background: linear-gradient(to right, var(--raciones-accent), var(--raciones-accent-light));
+}
+
+/* ===== GRILLA DE RACIONES ===== */
+#racioMedi .ration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+#racioMedi .ration-item {
+    background: linear-gradient(to bottom, #ffffff, #f8fafc);
+    border: 1px solid var(--raciones-border);
+    border-radius: 18px;
+    padding: 28px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+#racioMedi .ration-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--raciones-accent-light);
+    box-shadow: 0 8px 20px var(--raciones-shadow);
+}
+
+#racioMedi .ration-name {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--raciones-text-title);
+    margin-bottom: 12px;
+}
+
+#racioMedi .ration-item p {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--raciones-text-highlight) !important;
+}
+
+/* ===== LISTA DE RECOMENDACIONES ===== */
+#racioMedi .ration-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+#racioMedi .ration-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 18px;
+    color: var(--raciones-text-body);
+    line-height: 1.8;
+}
+
+#racioMedi .ration-list li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 11px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--raciones-accent);
+    box-shadow: 0 0 0 4px var(--raciones-shadow);
+}
+
+/* ===== IMÁGENES ===== */
+#racioMedi .ration-item img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin-top: 18px;
+}
+
+#racioMedi .ration-list img {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 160px;
+    object-fit: cover;
+    margin: 18px auto 0;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* ===== RESPONSIVE (MÓVIL) ===== */
+@media (max-width: 768px) {
+
+    #racioMedi { padding: 20px 15px; }
+
+    #racioMedi .ration-card { padding: 28px; }
+    #racioMedi .ration-card h3 { font-size: 21px; }
+    #racioMedi .ration-item p { font-size: 21px; }
+}

@@ -1,30 +1,132 @@
 :root {
     --letra: black;
+    --letras: #e78224;
     --color-principal: #e78224;
 
-    --color-capa1: #dbab89; /* InfoCascara */
-    --color-capa2: #9da6a4; /* InfoClara */
-    --color-capa3: #fab635; /* InfoYema */
-
-    /* CURIOSIDADES */
-    --color-fondo: #fae6d3;
-    --color-fondo-blanco: #ffffff;
-    --letra-curiosidades: #f1a16b;
-
-    /* FUENTES */
-    --font-principal: 'Gliker', sans-serif;
-    --font-secundario: 'LeagueSpartan', sans-serif;
-
+    /* FUENTES */ /* index (home) */
+    --index-font: 'Gliker', sans-serif;
 
     /* PESTANNAS */
-    --color-1: #FBCBA3;
-    --color-hover: #eaa565;
-    --color-active: #eaa565;
-    --color-letra-pestannas: white;
-
+    --pestannas-bg: #FBCBA3;
+    --pestannas-color: #e78224;
+    --pestannas-hover: #eaa565;
+    --pestannas-active: #eaa565;
+    --pestannas-texto: white;
 
     /* FOOTER y NAV*/
-    --color-principal-footer-nav: #e78224;
-    --color-secundario-footer-nav: #FBCBA3;
-    --color-fondo-nav: #eaa565;
+    --nav-footer-primary: #e78224;
+    --nav-footer-secondary: #FBCBA3;
+    --nav-bg: #eaa565;
+}
+
+#valorNutri {
+    --nutri-letra: black;
+    --nutri-color-principal: #e78224;
+    --nutri-font-principal: 'Gliker', sans-serif;
+    --nutri-font-secundario: 'LeagueSpartan', sans-serif;
+    --nutri-pestannas-bg: #f8e7dd;
+    --nutri-color-borde: #eadfce;
+    --nutri-color-sombra-hover: rgba(217, 139, 43, 0.18);
+    --nutri-fondo-tarjeta-front: rgba(255, 253, 249, 0.85);
+    --nutri-fondo-tarjeta-back: #fffaf5;
+    --nutri-color-texto-front: #6b4c2f;
+    --nutri-color-texto-back: #7b5a3c;
+    --nutri-color-texto-back-li: #8c6a4b;
+    --nutri-color-texto-destacado: #5a3b1d;
+}
+
+#ingestaRecomendada {
+    --ingesta-accent-color: #e78224;
+    --ingesta-accent-gradient: #FBCBA3;
+    --ingesta-font-principal: 'Gliker', sans-serif;
+    --ingesta-font-secundario: 'LeagueSpartan', sans-serif;
+    --ingesta-pestannas-bg: #f8e7dd;
+    --ingesta-bg-card: #fffdf9;
+    --ingesta-text-main: #5a3b1d;
+    --ingesta-text-p: #7b5a3c;
+    --ingesta-text-li: #6b4c2f;
+    --ingesta-border-color: #eadfce;
+    --ingesta-shadow-accent: rgba(231, 130, 36, 0.12);
+    --ingesta-font-family: 'LeagueSpartan', sans-serif;
+}
+
+#racioMedi {
+    --raciones-accent: #e78224;
+    --raciones-accent-light: #FBCBA3;
+    --raciones-font-principal: 'Gliker', sans-serif;
+    --raciones-font-secundario: 'LeagueSpartan', sans-serif;
+    --raciones-pestannas-bg: #f8e7dd;
+    --raciones-bg-card: #fffdf9;
+    --raciones-text-title: #5a3b1d;
+    --raciones-text-body: #7b5a3c;
+    --raciones-text-highlight: #e78224;
+    --raciones-border: #eadfce;
+    --raciones-shadow: rgba(231, 130, 36, 0.12);
+}
+
+#patoFisio {
+    --patologia-accent: #e78224;
+    --patologia-accent-gradient: #FBCBA3;
+    --patologia-font-principal: 'Gliker', sans-serif;
+    --patologia-font-secundario: 'LeagueSpartan', sans-serif;
+    --patologia-pestannas-bg: #f8e7dd;
+    --patologia-bg-card: #fffdf9;
+    --patologia-bg-badge: #f0e2d8;
+    --patologia-border: #eadfce;
+    --patologia-border-divider: #eadfce;
+    --patologia-text-title: #5a3b1d;
+    --patologia-text-h4: #5a3b1d;
+    --patologia-text-body: #7b5a3c;
+    --patologia-shadow: rgba(90, 59, 29, 0.05);
+    --patologia-shadow-hover: rgba(231, 130, 36, 0.18);
+    --patologia-strong-bg: rgba(231, 130, 36, 0.1);
+    --patologia-font-family: 'LeagueSpartan', sans-serif;
+}
+
+#metodoAnalisis {
+    --metodo-accent: #e78224;
+    --metodo-accent-gradient: #FBCBA3;
+    --metodo-font-principal: 'Gliker', sans-serif;
+    --metodo-font-secundario: 'LeagueSpartan', sans-serif;
+    --metodo-pestannas-bg: #f8e7dd;
+    --metodo-bg-card: #fffdf9;
+    --metodo-bg-subtle: #fbf2e9;
+    --metodo-bg-hover: #fffdfa;
+    --metodo-border: #eadfce;
+    --metodo-border-light: #f0e2d8;
+    --metodo-border-subtle: #f5eae1;
+    --metodo-border-accordion: #eadfce;
+    --metodo-text-main: #5a3b1d;
+    --metodo-text-body: #7b5a3c;
+    --metodo-text-muted: #8c6a4b;
+    --metodo-text-title: #5a3b1d;
+    --metodo-shadow: rgba(90, 59, 29, 0.03);
+    --metodo-shadow-hover: rgba(90, 59, 29, 0.08);
+    --metodo-shadow-accent: rgba(231, 130, 36, 0.08);
+    --metodo-shadow-accordion: rgba(231, 130, 36, 0.12);
+    --metodo-badge-opacity: rgba(231, 130, 36, 0.1);
+    --metodo-watermark-opacity: rgba(231, 130, 36, 0.05);
+    --metodo-font-family: "Poppins", sans-serif;
+}
+
+#curiosidades {
+    --curiosidades-accent: #e78224;
+
+    /* - tarjetas */
+    --curiosidades-color-borde: #eadfce;
+
+    /* - fondos */
+    --curiosidades-fondo-tarjeta-front: #fffdf9;
+    --curiosidades-fondo-tarjeta-back: #fffaf5;
+    --curiosidades-pestannas-bg: #f8e7dd;
+
+    /* -textos */
+    --curiosidades-font-principal: 'Gliker', sans-serif;
+    --curiosidades-font-secundario: 'LeagueSpartan', sans-serif;
+    --curiosidades-color-texto-front: #6b4c2f;
+    --curiosidades-color-texto-back: #7b5a3c;
+    --curiosidades-color-texto-back-li: #8c6a4b;
+
+    /* - acentos / ui */
+    --curiosidades-color-lateral: #e78224;
 }

@@ -1,50 +1,71 @@
-<div class="contenido">
-    <div id="ovoproductos">
-        <h3>OVOPRODUCTOS</h3>
-        <ol>
-            <li>Son huevos sin cáscara sometido a pasteurización, congelación o deshidratación.</li>
-            <li><h4>Principales tipos:</h4></li>
-            <ol class="enumerar">
-                <li>Huevo líquido pasteurizado</li>
-                <li>Huevo en polvo</li>
-                <li>Huevo congelado</li>
-                <li>Mezclas preparadas</li>
-            </ol>
-        </ol>
-        <ol class="galeria">
-            <li><img src="{{ asset('img/huevo_en_polvo.png') }}" alt="Huevo en polvo"></li>
-            <li><img src="{{ asset('img/huevo_líquido_pasteurizado.png') }}" alt="Huevo líquido"></li>
-        </ol>
+<!-- OVOPRODUCTOS -->
+<div class="ration-card">
+    <h3>Ovoproductos</h3>
+
+    <p>
+        Son productos derivados del huevo sin cáscara que han sido
+        sometidos a procesos de pasteurización, congelación o
+        deshidratación para mejorar su conservación y seguridad.
+    </p>
+
+    <div class="ration-grid">
+        <div class="ration-item">
+            <span class="ration-name">Huevo líquido pasteurizado</span>
+            <p>Uso frecuente en cocina y restauración.</p>
+            <img src="{{ asset('img/huevo/huevo_líquido_pasteurizado.png') }}"
+                alt="Huevo líquido pasteurizado">
+        </div>
+
+        <div class="ration-item">
+            <span class="ration-name">Huevo en polvo</span>
+            <p>Mayor duración y fácil almacenamiento.</p>
+            <img src="{{ asset('img/huevo/huevo_en_polvo.png') }}"
+                alt="Huevo en polvo">
+        </div>
+
+        <div class="ration-item">
+            <span class="ration-name">Huevo congelado</span>
+            <p>Conservación prolongada para uso industrial.</p>
+            <img src="{{ asset('img/huevo/huevo_congelado.png') }}"
+                alt="Huevo congelado">
+        </div>
+
+        <div class="ration-item">
+            <span class="ration-name">Mezclas preparadas</span>
+            <p>Combinaciones listas para diferentes elaboraciones.</p>
+            <img src="{{ asset('img/huevo/mezclas_preparadas.png') }}"
+                alt="Mezclas preparadas">
+        </div>
     </div>
-    <div id="aplicaciones">
-        <h3>APLICACIONES</h3>
-        <ol>
-            <li>
-                <h4>Cocina/Repostería</h4>
-                <ol class="enumerar">
-                    <li>Cocido, frito, tortilla</li>
-                    <li>Bizcochos, flanes, natillas</li>
-                    <li>Salsas (mayonesa)</li>
-                    <li>Rebozados</li>
-                </ol>
-            </li>
-            <li>
-                <h4>Industria</h4>
-                <ol class="enumerar">
-                    <li>Bollería y pastelería industrial</li>
-                    <li>Pasta industrial</li>
-                    <li>Salsas industriales</li>
-                    <li>Productos cárnicos</li>
-                </ol>
-            </li>
-            <li>
-                <h4>Restauración colectiva</h4>
-                <ol class="enumerar">
-                    <li>Nutritivos</li>
-                    <li>Fáciles de preparar</li>
-                    <li>Económicos para alimentar a muchas personas</li>
-                </ol>
-            </li>
-        </ol>
-    </div>
+</div>
+
+<!-- APLICACIONES -->
+<div class="ration-card">
+    <h3>Aplicaciones</h3>
+
+    <ul class="ration-list">
+        <li>
+            <strong>Cocina y repostería:</strong>
+            cocido, frito, tortilla, bizcochos, flanes, natillas,
+            mayonesa y rebozados.
+            <img src="{{ asset('img/huevo/tortilla_de_patata.png') }}"
+                alt="Tortilla de patata">
+        </li>
+
+        <li>
+            <strong>Industria alimentaria:</strong>
+            bollería y pastelería industrial, pasta industrial,
+            salsas y productos cárnicos.
+            <img src="{{ asset('img/huevo/bolleria_industrial.png') }}"
+                alt="Bolleria industrial">
+        </li>
+
+        <li>
+            <strong>Restauración colectiva:</strong>
+            alimentos nutritivos, fáciles de preparar y económicos
+            para grandes grupos de personas.
+            <img src="{{ asset('img/huevo/restauracion.png') }}"
+                alt="Restauracion">
+        </li>
+    </ul>
 </div>

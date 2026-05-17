@@ -4,7 +4,7 @@
     z-index: 1000;
     width: 100%;
 
-    background: var(--color-fondo-nav);
+    background: var(--nav-bg);
     backdrop-filter: blur(6px);
 }
 
@@ -16,6 +16,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    font-family: var(--font-secondary), sans-serif;
 }
 
 /* TODOS los hijos ocupan espacio proporcional */
@@ -26,14 +27,14 @@
 
     flex: 1;
 
-    background: var(--color-principal-footer-nav);
-    border: 1px solid var(--color-fondo-nav);
+    background: var(--nav-footer-primary);
+    border: 1px solid var(--nav-bg);
 
 	transition: background 0.3s ease;
 }
 
 .menu-item > li:hover, #menus li a:hover {
-	background: var(--color-fondo-nav);
+	background: var(--nav-bg);
 }
 
 /* menú central ocupa más */
@@ -72,8 +73,8 @@
     color: white;
     text-align: center; /* Refuerzo para el texto */
     
-    background: var(--color-principal-footer-nav);
-    border: 1px solid var(--color-fondo-nav);
+    background: var(--nav-footer-primary);
+    border: 1px solid var(--nav-bg);
     transition: background 0.3s ease;
 
     /* Para que no haya bordes arriba y abajo */

@@ -1,0 +1,152 @@
+/* ============================================================
+   SECCIÓN: INGESTA RECOMENDADA
+   ============================================================ */
+
+#ingestaRecomendada {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, var(--ingesta-pestannas-bg));
+    font-family: var(--ingesta-font-family);
+}
+
+/* ============================================================
+   TITULO H2
+   ============================================================ */
+#ingestaRecomendada h2.tituloAlimento {
+    font-family: var(--ingesta-font-principal);
+    color: var(--ingesta-accent-color);
+    padding: 1rem 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- Contenedor Card Principal --- */
+#ingestaRecomendada .content-card {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    background: var(--ingesta-bg-card);
+    border-radius: 22px;
+    padding: 38px;
+    border: 1px solid var(--ingesta-border-color);
+    box-shadow: 
+        0 4px 10px rgba(15, 23, 42, 0.03), 
+        0 12px 30px rgba(15, 23, 42, 0.04);
+}
+
+/* --- Títulos (h3) --- */
+#ingestaRecomendada .content-card h3 {
+    position: relative;
+    font-size: 24px;
+    color: var(--ingesta-text-main);
+    font-weight: 600;
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+}
+
+#ingestaRecomendada .content-card h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 4px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to right, 
+        var(--ingesta-accent-color), 
+        var(--ingesta-accent-gradient)
+    );
+}
+
+/* --- Párrafos --- */
+#ingestaRecomendada .content-card p {
+    color: var(--ingesta-text-p);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* --- Listado Simple --- */
+#ingestaRecomendada .simple-list {
+    margin-top: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+#ingestaRecomendada .simple-list li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 16px;
+    color: var(--ingesta-text-li);
+    line-height: 1.7;
+}
+
+/* Bullet Personalizado */
+#ingestaRecomendada .simple-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em; /* Se alinea mejor con fuentes tipo League Spartan */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--ingesta-accent-color);
+    box-shadow: 0 0 0 4px var(--ingesta-shadow-accent);
+}
+
+/* --- Grid de Recomendaciones --- */
+#ingestaRecomendada .recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+/* Items del Grid */
+#ingestaRecomendada .recommendation-item {
+    background: linear-gradient(to bottom, #ffffff, var(--ingesta-bg-section));
+    border: 1px solid var(--ingesta-border-color);
+    border-radius: 18px;
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#ingestaRecomendada .recommendation-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--ingesta-accent-color);
+    box-shadow: 0 8px 20px var(--ingesta-shadow-accent);
+}
+
+#ingestaRecomendada .recommendation-item strong {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--ingesta-text-main);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#ingestaRecomendada .recommendation-item p {
+    margin: 0;
+    color: var(--ingesta-text-p);
+    font-size: 14px;
+}
+
+/* --- Adaptación Móvil --- */
+@media (max-width: 768px) {
+    #ingestaRecomendada {
+        padding: 20px 15px;
+    }
+
+    #ingestaRecomendada .content-card {
+        padding: 28px;
+    }
+
+    #ingestaRecomendada .content-card h3 {
+        font-size: 21px;
+    }
+    
+    #ingestaRecomendada .recommendation-grid {
+        gap: 16px;
+    }
+}

@@ -1,0 +1,154 @@
+/* ================= ESTRUCTURA BASE ================= */
+
+#curiosidades {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ffffff, var(--curiosidades-pestannas-bg));
+}
+
+/* ============================================================
+   TITULO H2
+   ============================================================ */
+#curiosidades h2.tituloAlimento {
+    font-family: var(--curiosidades-font-principal);
+    color: var(--curiosidades-accent);
+    padding: 1rem 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#curiosidades #contenTarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    align-items: stretch;
+}
+
+#curiosidades .sabiasQue {
+    perspective: 1000px;
+    min-height: 340px;
+    display: flex;
+}
+
+#curiosidades .tarjeta {
+    width: 100%;
+    min-height: 340px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1); /* Transición más fluida */
+}
+
+#curiosidades .tarjeta.flipped {
+    transform: rotateY(180deg);
+}
+
+/* ================= CARAS (COMPARTIDO) ================= */
+
+#curiosidades .front, #curiosidades .back {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    backface-visibility: hidden;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--curiosidades-color-borde);
+    border-left: 6px solid var(--curiosidades-color-lateral);
+    box-sizing: border-box; /* Definido una sola vez aquí */
+}
+
+/* ================= FRONT ================= */
+
+#curiosidades .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--curiosidades-fondo-tarjeta-front);
+    color: var(--curiosidades-color-texto-front);
+    font-family: var(--font-secondary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ================= BACK ================= */
+
+#curiosidades .back {
+    display: grid;
+    place-items: center;
+    transform: rotateY(180deg);
+    background: var(--curiosidades-fondo-tarjeta-back);
+    color: var(--curiosidades-color-texto-back);
+    overflow-y: auto;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    scrollbar-width: thin;
+    scrollbar-color: var(--curiosidades-color-lateral) transparent;
+}
+
+/* Contenedor interno */
+#curiosidades .back > * {
+    margin-block: auto; /* Abreviatura moderna para top y bottom */
+    width: 100%;
+}
+
+/* ================= CONTENIDO BACK ================= */
+
+#curiosidades .back h3 {
+    font-size: 1.1rem;
+    color: var(--curiosidades-color-lateral);
+    margin: 15px 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#curiosidades .back ol, #curiosidades .back ul, #curiosidades .back p {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 12px;
+}
+
+#curiosidades .back > ol > li {
+    background: rgba(0,0,0,0.02);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#curiosidades .sublista {
+    margin-top: 8px;
+    text-align: left;
+    display: inline-block;
+}
+
+#curiosidades .sublista li {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 15px;
+}
+
+#curiosidades .sublista li::before {
+    content: "•";
+    color: var(--curiosidades-color-lateral);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    #curiosidades { padding: 20px 15px; }
+    #curiosidades .tarjeta { min-height: 380px; }
+    #curiosidades .front { font-size: 1.1rem; }
+    #curiosidades .back { 
+        font-size: 0.85rem; 
+        padding: 18px; 
+    }
+    #curiosidades .back h3 { font-size: 0.95rem; }
+    #curiosidades .sublista li { font-size: 0.8rem; }
+}

@@ -1,144 +1,87 @@
-/* Estructura del huevo (svg y su texto) */
-
-/* Default ---- < 400px */
+/* Parte del valor-nutricional */
 :root {
+    /* Infografia */
     --color-capa1: #dbab89; /* InfoCascara */
     --color-capa2: #9da6a4; /* InfoClara */
     --color-capa3: #fab635; /* InfoYema */
 }
 
+/* ============================================================
+ESTILOS ESPECÍFICOS: HUEVO
+============================================================ */
+
+/* Tags específicos del huevo */
+.cascara { background: #d8b08c; color: #3b2f2f; }
+.clara { background: #f8fafc; color: #334155; border: 1px solid #e2e8f0; }
+.yema { background: #f7c548; color: #3b2f2f; }
+
+/* Infografía SVG y Partes */
 #infografia {
-    position: relative;
-    text-align: center;
-    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#infografia .nutrition-grid {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 #svg1 {
+    padding: 20px;
+    flex: 0 0 380px;
+    max-width: 380px;
+    width: 100%;
     display: block;
-    margin: 20px auto;
-    position: static; 
-    width: 66.265732mm;
-    height: 83.819954mm;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.08));
 }
 
 .infoParte {
-    margin-top: 20px;
-    text-align: center;
-    display: none; 
+    display: none;
+    text-align: left;
+    background: white;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    padding: 12px 14px;
+    transition: 0.3s;
 }
 
-/* Base */
-.infoParte h2 {
-    font-weight: bolder;
-    margin-bottom: 8px;
-    font-size: 1.3rem;
-}
-.infoParte ul {
-    list-style-position: inside;
-    padding-left: 0;
-    padding: 10px;   
-    border-radius: 10px;  
-}
-.infoParte ul li ul{ border: none; }
-.infoParte ul li{ margin-top: 10px; }
-
-/* Especificaciones */
-
-/* - -- Cascara -- - */
-#infoCascara h2 { color: var(--color-capa1); }
-#infoCascara ul { border: 2px solid var(--color-capa1); }
-
-#infoCascara ul li::marker { color: var(--color-capa1); }
-
-/* - -- Clara -- - */
-#infoClara h2{ color: var(--color-capa2); }
-#infoClara ul { border: 2px solid var(--color-capa2); }
-
-#infoClara ul li::marker { color: var(--color-capa2); }
-
-/* - -- Yema -- - */
-#infoYema h2{ color: var(--color-capa3); }
-#infoYema ul { border: 2px solid var(--color-capa3); }
-
-#infoYema ul li::marker { color: var(--color-capa3); }
-
-/* ===================== MEDIA QUERY  400px - 500px  ================================= */
-@media (min-width: 400px) {
-    .infoParte h2{ font-size: 2rem }
-
-    .infoParte ul li{ font-size: 18px; }
+.infoParte:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* ===================== MEDIA QUERY  500px - 800px  ================================= */
-@media (min-width: 501px) {
-    .infoParte h2{ font-size: 2.3rem }
-
-    .infoParte ul li{ font-size: 20px; }
-
-    #svg1 { width: 70%; }
+.infoParte strong {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 4px;
+    color: #0f172a;
 }
 
-/* ===================== MEDIA QUERY  801px - 1000px  ================================= */
-@media (min-width: 801px) {
+.infoParte li {
+    font-size: 15px;
+    line-height: 1.35;
+    margin: 0;
+    color: #64748b;
+    list-style: disc; /* Asegura que se vean los puntos si es una lista */
+}
+
+@media (max-width: 768px) {
+
+    /* Ajustes específicos huevo en móvil */
     #infografia {
-        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 70px; 
-        margin-top: 20px;
     }
 
     #svg1 {
-        width: 50%;
-        margin: 0;
-        margin-top: 20px; 
+        max-width: 300px;
+        flex: none;
     }
 
-    .infoParte {
-        width: 50%;
-        margin: 0;
-        margin-right: 10px;        
+    #infografia .nutrition-grid {
+        width: 100%;
     }
-
-    .infoParte ul li{ font-size: 15px; } 
-}
-
-/* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
-@media (min-width: 1001px) {
-    #infografia { 
-        margin-top: 25px
-    }
-
-    #svg1 {
-        width: 40%;
-        margin-top: 25px; 
-    }
-
-    .infoParte { width: 60%; }
-
-    .infoParte ul li{ font-size: 17px; } 
-
-    .infoParte h2{ font-size: 2.5rem }
-}
-
-/* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
-@media (min-width: 1201px) {
-    #infografia {  margin-top: 30px }
-
-    #svg1 { margin-top: 30px;  }
-
-    .infoParte ul li{ font-size: 20px; } 
-
-    .infoParte h2{ font-size: 2.7rem }
-}
-
-/* ===================== MEDIA QUERY  1601px  ================================= */
-@media (min-width: 1601px) {
-    #infografia {  margin-top: 35px }
-
-    #svg1 { margin-top: 35px;  }
-
-    .infoParte ul li{ font-size: 23px; } 
-
-    .infoParte h2{ font-size: 3rem }
 }

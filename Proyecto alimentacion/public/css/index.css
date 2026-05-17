@@ -20,16 +20,16 @@
     --color-pescado-nombre: #ee9157;
 
     /* FOOTER y NAV */
-    --color-principal-footer-nav: #98a533;
-    --color-secundario-footer-nav: #e4dbbe;
-    --color-fondo-nav: #7c8821;
+    --nav-footer-primary: #98a533;
+    --nav-footer-secondary: #e4dbbe;
+    --nav-bg: #7c8821;
 
     /* FONDOS */
     --color-fondo: #e4dbbe;
     --color-fondo-blanco: #ffffff;
 
     /* FUENTES */
-    --font-principal: 'Gagalin', sans-serif;
+    --index-font: 'Gagalin', sans-serif;
 }
 
 @font-face {

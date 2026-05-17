@@ -1,7 +1,7 @@
-<div id="bannerLeche">
-    <div class="banner-texto">
-        <h1 id="tituloLeche">Leche</h1>
-        <div id="introLeche">Introducción</div>
+<div id="banner" class="carne">
+    <h1 id="titulo">Carne</h1>
+    <div id="intro">
+        Introducción
     </div>
-    <img src="{{ asset('img/leche_img.png') }}" alt="Jarra de leche" id="lecheBannerImg">
+    <img src="{{ asset('img/carne/carne_img.png') }}" alt="Conjunto de Carnes" id="bannerImg">
 </div>

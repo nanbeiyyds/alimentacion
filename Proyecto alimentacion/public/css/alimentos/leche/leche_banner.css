@@ -1,56 +1,13 @@
 /* Default ---- < 400px */
-body{
-    background-color: white;
+:root {
+    --fondo-personalizado: url(/img/leche/fondo_leche.jpg);
+    --color-principal-banner: #77b4d8;
+    --color-fondo-banner: white;
+    --color-borde-banner: #77b4d8;
+    --color-letra-intro: #545454;
 }
 
-@font-face {
-    font-family: 'Gliker';
-    src: url('/fonts/Gliker-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-#bannerLeche {
-    background-image: url(/img/fondo_leche2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    min-height: 200px;
-    position: relative;
-}
-
-#tituloLeche {
-    font-family: 'Gliker';
-    color: #77b4d8;
-    position: absolute;
-	font-size: 70px;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-61%);
-	z-index: 2;
-} 
-
-#introLeche {
-    position: absolute;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 55%;
-    font-size: 14px;
-    color: #545454;
-    line-height: 1.4;
-    font-weight: 500;
-    text-align: center;
-	z-index: 2;
-    background-color: white;
-    border: 2px solid #77b4d8;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#lecheBannerImg {
+#bannerImg {
     position: absolute;
     top: 25px;
     left: 67%;
@@ -62,142 +19,54 @@ body{
 
 /* ===================== MEDIA QUERY  400px - 500px  ================================= */
 @media (min-width: 400px) {
-    #lecheBannerImg {
+    #bannerImg {
         top: 17px;
         left: 67%;
         height: 96px;
-    }
-
-    #tituloLeche {
-        font-size: 90px;
-        top: 8px;
-    }
-
-    #introLeche {
-        font-size: 20px;
-        top: 130px;
-    }
-
-    #bannerLeche {
-        height: 240px;
     }
 }
 
 /* ===================== MEDIA QUERY  500px - 800px  ================================= */
 @media (min-width: 501px) {
-    #lecheBannerImg {
+    #bannerImg {
         top: 17px;
         left: 67%;
         height: 115px;
-    }
-
-    #tituloLeche {
-        font-size: 105px;
-        top: 4px;
-    }
-
-    #introLeche {
-        font-size: 20px;
-        top: 145px;
-        width: 50%;
-    }
-
-    #bannerLeche {
-        height: 270px;
     }
 }
 
 /* ===================== MEDIA QUERY  801px - 1000px  ================================= */
 @media (min-width: 801px) {
-    #lecheBannerImg {
+    #bannerImg {
         top: 40px;
         left: 64%;
         height: 230px;
-    }
-
-    #tituloLeche {
-        font-size: 100px;
-        top: 12px;
-        left: 37%;
-    }
-
-    #introLeche {
-        top: 140px;
-        left: 34%;
-        width: 40%;
-        font-size: 18px;        
-    }
-
-    #bannerLeche {
-        height: 340px;
     }
 }
 
 /* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
 @media (min-width: 1001px) {
-    #lecheBannerImg {
+    #bannerImg {
         top: 30px;
         left: 64%;
         height: 270px;
-    }
-
-    #tituloLeche {
-        font-size: 120px;
-        top: 12px;
-        left: 33%;
-    }
-
-    #introLeche {
-        top: 160px;
-        left: 30%;
-        font-size: 18px;        
-    }
-
-    #bannerLeche {
-        height: 360px;
     }
 }
 
 /* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
 @media (min-width: 1201px) {
-	#lecheBannerImg {
+	#bannerImg {
         top: 26px;
         left: 65%;
         height: 320px;
-    }
-
-    #tituloLeche {
-        font-size: 130px;
-        top: 10px;
-        left: 33%;
-    }
-
-    #introLeche {
-        top: 175px;
-        left: 30%;
-        width: 35%;
-        font-size: 19px;        
     }
 }
 
 /* ===================== MEDIA QUERY  1601px  ================================= */
 @media (min-width: 1601px) {
-    #lecheBannerImg {
+    #bannerImg {
         top: 20px; 
         left: 65%;
         height: 350px;
-    }
-
-    #tituloLeche {
-        font-size: 140px;
-        top: 10px;
-        left: 33%;
-    }
-
-    #introLeche {
-        top: 185px;
-        left: 30%;
-        width: 40%;
-        font-size: 22px;        
     }
 }

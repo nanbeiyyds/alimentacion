@@ -1,7 +1,7 @@
-<div id="bannerHarina">
-    <h1 id="tituloHarina">Harina</h1>
-    <div id="introHarina">
+<div id="banner" class="harina">
+    <h1 id="titulo">Harina</h1>
+    <div id="intro">
         Introducción
     </div>
-    <img src="{{ asset('img/harina_img.png') }}" alt="Conjunto de Carnes" id="harinaBannerImg">
+    <img src="{{ asset('img/harina/harina_img.png') }}" alt="Conjunto de Carnes" id="bannerImg">
 </div>

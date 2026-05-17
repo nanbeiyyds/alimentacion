@@ -1,52 +1,13 @@
 /* Default ---- < 400px */
-@font-face {
-    font-family: 'Gliker';
-    src: url('/fonts/Gliker-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+:root {
+    --fondo-personalizado: #fbcba3;
+    --color-principal-banner: #e78224;
+    --color-borde-banner: #e78224;
+    --color-fondo-banner: white;
+    --color-letra-intro: #545454;
 }
 
-#bannerHuevo {
-    background-color: #fbcba3;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-    min-height: 200px;
-    position: relative;
-}
-
-#tituloHuevo {
-    font-family: 'Gliker';
-    color: #e78224;
-    position: absolute;
-	font-size: 65px;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-61%);
-	z-index: 2;
-} 
-
-#introHuevo {
-    position: absolute;
-    top: 110px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 75%;
-    font-size: 14px;
-    color: #545454;
-    line-height: 1.4;
-    font-weight: 500;
-    text-align: center;
-	z-index: 2;
-    background-color: white;
-    border: 2px solid #e78224;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-#huevoBannerImg {
+#bannerImg {
     position: absolute;
     top: 25px;
     left: 67%;
@@ -57,141 +18,54 @@
 
 /* ===================== MEDIA QUERY  400px - 500px  ================================= */
 @media (min-width: 400px) {
-    #huevoBannerImg {
+    #bannerImg {
         top: 17px;
         left: 66%;
         height: 96px;
-    }
-
-    #tituloHuevo {
-        font-size: 90px;
-        top: 13px;
-    }
-
-    #introHuevo {
-        font-size: 14px;
-        top: 130px;
-    }
-
-    #bannerHuevo {
-        height: 240px;
     }
 }
 
 /* ===================== MEDIA QUERY  500px - 800px  ================================= */
 @media (min-width: 501px) {
-    #huevoBannerImg {
+    #bannerImg {
         top: 7px;
         left: 62%;
         height: 115px;
-    }
-
-    #tituloHuevo {
-        font-size: 115px;
-        top: 4px;
-    }
-
-    #introHuevo {
-        font-size: 16px;
-        top: 145px;
-    }
-
-    #bannerHuevo {
-        height: 270px;
     }
 }
 
 /* ===================== MEDIA QUERY  801px - 1000px  ================================= */
 @media (min-width: 801px) {
-    #huevoBannerImg {
+    #bannerImg {
         top: 40px;
         left: 60%;
         height: 230px;
-    }
-
-    #tituloHuevo {
-        font-size: 100px;
-        top: 35px;
-        left: 37%;
-    }
-
-    #introHuevo {
-        top: 160px;
-        left: 33%;
-        width: 40%;
-        font-size: 18px;        
-    }
-
-    #bannerHuevo {
-        height: 340px;
     }
 }
 
 /* ===================== MEDIA QUERY  1001px - 1200px  ================================= */
 @media (min-width: 1001px) {
-    #huevoBannerImg {
+    #bannerImg {
         top: 10px;
         left: 60%;
         height: 270px;
-    }
-
-    #tituloHuevo {
-        font-size: 120px;
-        top: 32px;
-        left: 33%;
-    }
-
-    #introHuevo {
-        top: 180px;
-        left: 30%;
-        font-size: 18px;        
-    }
-
-    #bannerHuevo {
-        height: 360px;
     }
 }
 
 /* ===================== MEDIA QUERY  1201px - 1600px  ================================= */
 @media (min-width: 1201px) {
-	#huevoBannerImg {
+	#bannerImg {
         top: 10px;
         left: 65%;
         height: 320px;
-    }
-
-    #tituloHuevo {
-        font-size: 130px;
-        top: 30px;
-        left: 33%;
-    }
-
-    #introHuevo {
-        top: 195px;
-        left: 30%;
-        width: 35%;
-        font-size: 19px;        
     }
 }
 
 /* ===================== MEDIA QUERY  1601px  ================================= */
 @media (min-width: 1601px) {
-    #huevoBannerImg {
+    #bannerImg {
         top: 2px;
         left: 65%;
         height: 350px;
-    }
-
-    #tituloHuevo {
-        font-size: 140px;
-        top: 30px;
-        left: 33%;
-    }
-
-    #introHuevo {
-        top: 205px;
-        left: 30%;
-        width: 40%;
-        font-size: 22px;        
     }
 }
